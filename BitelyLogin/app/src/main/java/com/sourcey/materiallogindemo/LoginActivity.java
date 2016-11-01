@@ -1,3 +1,8 @@
+/*
+ *
+ * This login framework is sourced from https://github.com/sourcey/materiallogindemo
+ *
+ */
 package com.sourcey.materiallogindemo;
 
 import android.app.ProgressDialog;

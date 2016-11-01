@@ -1,3 +1,8 @@
+/*
+ *
+ * This login framework is sourced from https://github.com/sourcey/materiallogindemo
+ *
+ */
 package com.sourcey.materiallogindemo;
 
 import android.content.Intent;
@@ -5,6 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
 
 
 public class MainActivity extends ActionBarActivity {
