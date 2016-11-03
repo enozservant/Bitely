@@ -1,4 +1,4 @@
-package com.sourcey.materiallogindemo;
+package com.finalproject.bitelyapp;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

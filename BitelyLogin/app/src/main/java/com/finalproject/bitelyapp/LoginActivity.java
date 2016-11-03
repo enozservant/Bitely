@@ -3,7 +3,7 @@
  * This login framework is sourced from https://github.com/sourcey/materiallogindemo
  *
  */
-package com.sourcey.materiallogindemo;
+package com.finalproject.bitelyapp;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;

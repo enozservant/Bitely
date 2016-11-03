@@ -4,7 +4,7 @@
  *
  */
 
-package com.sourcey.materiallogindemo;
+package com.finalproject.bitelyapp;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

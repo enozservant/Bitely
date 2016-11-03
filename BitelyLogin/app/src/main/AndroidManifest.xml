@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sourcey.materiallogindemo">
+    package="com.finalproject.bitelyapp">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.finalproject.bitelyapp.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,13 +18,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.finalproject.bitelyapp.LoginActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name=".SignupActivity"
+            android:name="com.finalproject.bitelyapp.SignupActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name=".MainScreenLogged"
+            android:name="com.finalproject.bitelyapp.MainScreenLogged"
             android:label="@string/title_activity_main_screen_logged"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
