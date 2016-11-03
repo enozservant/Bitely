@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "218907234457",
+    "firebase_url": "https://bitely-950dd.firebaseio.com",
+    "project_id": "bitely-950dd",
+    "storage_bucket": "bitely-950dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218907234457:android:2b7af37eaf6bc743",
+        "android_client_info": {
+          "package_name": "com.finalproject.bitelyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218907234457-miplec940j6i0gtdhr5v1qnik4lrceh6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0tWU1FDyRUa3V-7FdSbeTB2By4siXrIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
