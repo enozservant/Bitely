@@ -59,7 +59,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint=" Full Name"
+                            android:text=" Full Name"
                             android:layout_marginLeft="5dp"
                             android:textSize="14dp"
                             android:textColor="#000"/>
@@ -298,7 +298,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="+919429283901"
+                android:text="+919429283901"
                 android:textColor="#000"
                 android:textSize="16dp"
                 android:padding="5dp"
@@ -316,7 +316,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="+919429283901"
+                android:text="+919429283901"
                 android:textColor="#000"
                 android:textSize="16dp"
                 android:padding="5dp"
@@ -357,7 +357,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="test@gmail.com"
+                android:text="test@gmail.com"
                 android:textColor="#000"
                 android:textSize="16dp"
                 android:padding="5dp"
@@ -401,7 +401,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint=" Jamaica, Caribbean"
+                android:text=" Jamaica, Caribbean"
                 android:textColor="#000"
                 android:textSize="16dp"
                 android:padding="5dp"

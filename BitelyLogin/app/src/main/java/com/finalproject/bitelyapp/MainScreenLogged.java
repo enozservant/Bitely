@@ -80,24 +80,18 @@ public class MainScreenLogged extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home_screen)
-        {
-            // Handle the home screen action
-        } else if (id == R.id.nav_my_list)
-        {
-            // Handle the my list action
-        } else if (id == R.id.nav_trending)
-        {
-            // Handle the trending action
-        } else if (id == R.id.nav_my_friends)
-        {
-            // Handle the my my friends action
-        } else if (id == R.id.nav_browse_screen)
-        {
-            // Handle the my browse screen action
-        } else if (id == R.id.nav_user_profile)
-        {
-            // Handle the nav user profile action
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_manage) {
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

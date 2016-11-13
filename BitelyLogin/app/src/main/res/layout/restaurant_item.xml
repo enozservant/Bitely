@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-
+            android:src="@drawable/ic_people"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             />
@@ -51,27 +51,32 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginLeft="20dp" />
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_mark"/>
                 <ImageView
                     android:id="@+id/image2"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_mark"/>
                 <ImageView
                     android:id="@+id/image3"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_mark"/>
                 <ImageView
                     android:id="@+id/image4"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_mark"/>
                 <ImageView
                     android:id="@+id/image5"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_mark"/>
             </LinearLayout>
 
 
@@ -79,7 +84,7 @@
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="325 West Adams Blvd, Los Angeles"
+                android:text="325 West Adams Blvd, Los Angeles"
                 android:textSize="12dp"
                 android:textColor="#000"
                 android:layout_marginLeft="10dp"
@@ -87,7 +92,7 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:hint="Seafood, Cajun, Cocktail"
+                android:text="Seafood, Cajun, Cocktail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"

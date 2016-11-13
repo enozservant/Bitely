@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                         progressDialog.dismiss();
                     }
                 }, 3000);
-        Intent intent = new Intent(this, MainScreenLogged.class);
+        Intent intent = new Intent(this, BiteMeActivity.class);
         startActivity(intent);
     }
 

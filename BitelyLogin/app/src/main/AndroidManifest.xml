@@ -26,7 +26,11 @@
         <activity
             android:name="com.finalproject.bitelyapp.MainScreenLogged"
             android:label="@string/title_activity_main_screen_logged"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.finalproject.bitelyapp.BiteMeActivity"
+            android:label="BiteMe"
+            android:theme="@style/AppTheme.Dark" />
     </application>
 
 </manifest>
