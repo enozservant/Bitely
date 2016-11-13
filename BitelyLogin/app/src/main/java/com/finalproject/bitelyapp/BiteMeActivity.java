@@ -21,6 +21,7 @@ public class BiteMeActivity extends HomeScreen
         setContentView(R.layout.activity_bite_me);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Bit You!");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
