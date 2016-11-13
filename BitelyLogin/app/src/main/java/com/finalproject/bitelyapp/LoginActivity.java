@@ -6,50 +6,76 @@
 package com.finalproject.bitelyapp;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-
-import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
-import butterknife.ButterKnife;
 import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
-    private boolean successfulLogin = false;
+    private String email;
+    private String password;
 
     // a reference to the firebase database
     private FirebaseAuth mFirebaseAuth;
+    // a reference to the database
+    private FirebaseDatabase mFirebaseDatabase;
+    // a firebase auth listener
+    private FirebaseAuth.AuthStateListener mAuthListener;
+    private FirebaseDatabase mDatabaseRef;
 
     // @Bind(R.id.input_username) EditText _usernameText;
-    @Bind(R.id.input_email) EditText _userEmail;
-    @Bind(R.id.input_password) EditText _passwordText;
-    @Bind(R.id.btn_login) Button _loginButton;
-    @Bind(R.id.link_signup) TextView _signupLink;
-    
+    @Bind(R.id.input_email)
+    EditText _userEmail;
+    @Bind(R.id.input_password)
+    EditText _passwordText;
+    @Bind(R.id.btn_login)
+    Button _loginButton;
+    @Bind(R.id.link_signup)
+    TextView _signupLink;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
+        mDatabaseRef = FirebaseDatabase.getInstance();
         mFirebaseAuth = FirebaseAuth.getInstance();
-        
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    // User is signed in
+                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    Intent intent = new Intent(getApplicationContext(), MainScreenLogged.class);
+                    startActivity(intent);
+                } else {
+                    // User is signed out
+                    Log.d(TAG, "onAuthStateChanged:signed_out");
+                }
+            }
+        };
+
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -90,32 +116,33 @@ public class LoginActivity extends AppCompatActivity {
         /*
          * // TODO: Implement authentication with server
          */
-        String email = _userEmail.getText().toString();
-        String password = _passwordText.getText().toString();
+        email = _userEmail.getText().toString();
+        password = _passwordText.getText().toString();
 
         mFirebaseAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
-                {
+                .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task)
-                    {
-                        progressDialog.dismiss();
-                        if(task.isSuccessful())
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful())
                         {
-                            loginSuccess();
-                            Log.d(TAG, "Login Success");
+                            Log.w(TAG, "signInWithEmail", task.getException());
                         }
                         else
                         {
-                            Log.d(TAG, "Login Failure");
-                            onLoginFailed();
-
+                            // loginSuccess();
+                            Intent intent = new Intent(getApplicationContext(), MainScreenLogged.class);
+                            startActivity(intent);
                         }
                     }
                 });
 
-
     }
+
 
     @Override
     public void onBackPressed() {
@@ -127,19 +154,15 @@ public class LoginActivity extends AppCompatActivity {
     {
         _loginButton.setEnabled(true);
         finish();
-        Intent intent = new Intent(this, MainScreenLogged.class);
+        Intent intent = new Intent(getApplicationContext(), MainScreenLogged.class);
         startActivity(intent);
-
     }
 
-    public void onLoginFailed()
-    {
+    public void onLoginFailed() {
         // handle failed fields shit
         Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
         _loginButton.setEnabled(true);
     }
-
-
 
 
     /*
@@ -170,4 +193,20 @@ public class LoginActivity extends AppCompatActivity {
 
         return valid;
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mFirebaseAuth.addAuthStateListener(mAuthListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthListener != null) {
+            mFirebaseAuth.removeAuthStateListener(mAuthListener);
+        }
+    }
+
 }
+
