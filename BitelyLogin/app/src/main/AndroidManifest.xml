@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.finalproject.bitelyapp.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,15 +18,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.finalproject.bitelyapp.LoginActivity"
+            android:name=".LoginActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name="com.finalproject.bitelyapp.SignupActivity"
+            android:name=".SignupActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name="com.finalproject.bitelyapp.MainScreenLogged"
+            android:name=".MainScreenLogged"
             android:label="@string/title_activity_main_screen_logged"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BiteMeActivity"
+            android:label="@string/title_activity_bite_me"
+            android:parentActivityName=".MainScreenLogged"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.finalproject.bitelyapp.MainScreenLogged" />
+        </activity>
     </application>
 
 </manifest>
