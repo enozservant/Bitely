@@ -30,6 +30,9 @@
             android:label="@string/title_activity_main_screen_logged"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".LogoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".BiteMeActivity"
             android:label="@string/title_activity_bite_me"
             android:parentActivityName=".HomeScreen"

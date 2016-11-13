@@ -23,6 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.Bind;
@@ -34,7 +35,8 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseUser mFirebaseUser;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private FirebaseDatabase mDatabaseRef;
+    private FirebaseDatabase mDatabase;
+    private DatabaseReference mDatabaseRef;
 
     @Bind(R.id.input_name) EditText _nameText;
     @Bind(R.id.input_address) EditText _addressText;
@@ -51,7 +53,7 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
 
-        mDatabaseRef = FirebaseDatabase.getInstance();
+        // mDatabaseRef = FirebaseDatabase.getInstance();
         mFirebaseAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -113,20 +115,24 @@ public class SignupActivity extends AppCompatActivity {
         // TODO: Implement your own signup logic here.
 
         mFirebaseAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+
 
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful())
                         {
+                            Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+                            Log.d(TAG, "createUserWithEmail:onComplete:" + task.getException());
+
 
                         }
                         else
                         {
+                            saveUserInfoToDatabase();
                             Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
                             startActivity(intent);
                         }
@@ -219,5 +225,38 @@ public class SignupActivity extends AppCompatActivity {
         if (mAuthListener != null) {
             mFirebaseAuth.removeAuthStateListener(mAuthListener);
         }
+    }
+
+    public void saveUserInfoToDatabase()
+    {
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference();
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseUser = mFirebaseAuth.getCurrentUser();
+        String uid = mFirebaseUser.getUid();
+
+        String name = _nameText.getText().toString();
+        // need a last name field
+        String address = _addressText.getText().toString();
+        String phoneNumber = _mobileText.getText().toString();
+        // String password = _passwordText.getText().toString();
+        // String reEnterPassword = _reEnterPasswordText.getText().toString();
+
+        // String username = _username.getText().toString();        // TODO: Make a username field
+
+
+        User newUser = new User();
+        newUser.setFirstName(name);         // TODO: make a first name and last name field
+        newUser.setLastName(name);
+        newUser.setUID(uid);
+        newUser.setPhoneNumer(phoneNumber);
+        newUser.setUsername(name);      // TODO: username
+
+
+
+        mDatabaseRef.child("Users").child(uid).setValue(newUser);
+
+
+
+
     }
 }
