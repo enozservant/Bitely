@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="25"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="827582293879304"
+    token="-3830421497034804652"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="2685" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1687" />
+    <task
+        name="verifier"
+        duration="228" />
+
+    <artifact
+        location="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/outputs/apk/plaid--debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="827582293879304"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/outputs/apk/plaid--debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

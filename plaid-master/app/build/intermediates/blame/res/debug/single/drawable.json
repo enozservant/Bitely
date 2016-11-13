@@ -1,0 +1,546 @@
+[
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_dribbble.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_dribbble.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_upload_error.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_upload_error.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_player.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_player.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_hide_password.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_pocket.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_pocket.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_no_shots.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_no_shots.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_back_to_search.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_back_to_search.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/light_ripple.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/light_ripple.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_upvote_filled_24dp_blue.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_upvote_filled_24dp_blue.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_images.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_images.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_follow_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_follow_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_search_to_back.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_search_to_back.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_follow.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_follow.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_unfollow_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_unfollow_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/asl_comment_heart.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/asl_comment_heart.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/post_story.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/post_story.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_down_to_close.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_down_to_close.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_views.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_views.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/asl_follow.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/asl_follow.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_heart_full_56dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_heart_full_56dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_uploading.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_uploading.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_heart_fill.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_heart_fill.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_add_light.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_add_light.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/asl_upvote.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/asl_upvote.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/dialog_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/dialog_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_comment_to_add.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_comment_to_add.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/no_connection.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/no_connection.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_edit.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_add_to_comment.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_add_to_comment.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_upvote_empty_24dp_grey.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_upvote_empty_24dp_grey.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_upvote_filled_24dp_white.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_upvote_filled_24dp_white.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/mid_grey_bounded_ripple.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/mid_grey_bounded_ripple.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_arrow_back.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_views.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_views.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_shortcut_search.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_shortcut_search.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_filter_small.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_filter_small.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_add_dark.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_add_dark.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/asl_fab_heart.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/asl_fab_heart.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_close_down.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_close_down.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_uploading.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_uploading.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_heart_empty_56dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_heart_empty_56dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/dribbble_logo.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/dribbble_logo.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_comment_add.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_comment_add.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_likes.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_likes.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_close_to_down.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_close_to_down.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_heart_break.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_heart_break.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/searchback_back.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/searchback_back.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_action_share_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_action_share_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_image_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_image_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_followers.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_followers.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_followers.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_followers.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/filter_placeholder.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/filter_placeholder.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_shortcut_post.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_shortcut_post.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_no_connection.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_no_connection.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_arrow_back_padded.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_arrow_back_padded.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_share.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_share.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/mid_grey_ripple.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/mid_grey_ripple.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_news.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_news.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_heart_full_24dp_grey.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_heart_full_24dp_grey.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/comment_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/comment_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_down.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_down.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_designer_news.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_designer_news.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_comment_dark.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_comment_dark.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avatar_ripple.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avatar_ripple.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_save_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_save_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_like_comment.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_like_comment.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_search_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_search_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_upload_complete.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_upload_complete.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_unfollow.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_unfollow.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_reply.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_reply.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_upvote_anim.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_upvote_anim.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_comment_light.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_comment_light.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_upload_complete.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_upload_complete.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_share_avd.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_share_avd.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_show_password.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_heart_full_24dp_pink.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_heart_full_24dp_pink.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_comment_lines.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_comment_lines.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/asl_add_comment.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/asl_add_comment.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/fab_dribbble_fav.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/fab_dribbble_fav.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/searchback_search.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/searchback_search.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_password_visible.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_password_visible.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_heart_empty_24dp.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_heart_empty_24dp.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_hacker_news.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_hacker_news.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/asl_password_visibility.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/asl_password_visibility.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_heart_empty.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_heart_empty.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avatar_placeholder.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avatar_placeholder.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/dark_ripple.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/dark_ripple.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/avd_shots.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/avd_shots.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_no_comments.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_no_comments.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/designer_news_custom_tab_placeholder.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/designer_news_custom_tab_placeholder.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_product_hunt.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_product_hunt.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_password_masked.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_password_masked.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_filter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_filter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/ic_upload_error.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/ic_upload_error.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/fab.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/fab.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/drawable/heart_comment_anim.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/drawable/heart_comment_anim.xml"
+    }
+]

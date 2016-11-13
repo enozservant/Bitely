@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="designer_news_story_comment_background">@color/background_light</color>
+    <dimen name="designer_news_story_comment_action_elevation">4dp</dimen>
+    <dimen name="designer_news_story_comment_actions_padding_end">32dp</dimen>
+    <dimen name="designer_news_story_comment_actions_padding_start">24dp</dimen>
+    <dimen name="designer_news_story_comment_elevation">@dimen/z_card</dimen>
+    <dimen name="designer_news_story_comment_horizontal_padding">@dimen/padding_normal</dimen>
+    <dimen name="designer_news_story_comments_max_width">504dp</dimen>
+    <dimen name="designer_news_story_comments_vertical_padding">@dimen/padding_normal</dimen>
+    <dimen name="designer_news_story_enter_comment_padding_end">32dp</dimen>
+    <dimen name="designer_news_story_enter_comment_padding_start">28dp</dimen>
+    <dimen name="designer_news_story_title_height">112dp</dimen>
+    <dimen name="extended_height_toolbar">178dp</dimen>
+</resources>

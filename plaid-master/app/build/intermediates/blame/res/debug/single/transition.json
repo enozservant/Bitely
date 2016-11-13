@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_player_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_player_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_hide_confirm.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_hide_confirm.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/designer_news_story_shared_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/designer_news_story_shared_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/designer_news_story_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/designer_news_story_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_player_sheet_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_player_sheet_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_shot_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_shot_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_show_results.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_show_results.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/auto.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/auto.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/home_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/home_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_player_sheet_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_player_sheet_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/about_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/about_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_player_shared_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_player_shared_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_shot_shared_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_shot_shared_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_shared_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_shared_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_shared_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_shared_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/about_return_downward.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/about_return_downward.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_player_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_player_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/grid_overlap_fab_reenter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/grid_overlap_fab_reenter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_shot_shared_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_shot_shared_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/designer_news_story_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/designer_news_story_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/dribbble_shot_return.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/dribbble_shot_return.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/about_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/about_enter.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/search_show_confirm.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/search_show_confirm.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/transition/designer_news_story_shared_enter.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/transition/designer_news_story_shared_enter.xml"
+    }
+]

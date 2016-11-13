@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_header_height">400dp</dimen>
+    <dimen name="about_icon_padding">@dimen/spacing_large</dimen>
+    <dimen name="drag_dismiss_distance">168dp</dimen>
+</resources>

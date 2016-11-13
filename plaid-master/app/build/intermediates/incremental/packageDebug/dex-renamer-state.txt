@@ -1,0 +1,7 @@
+#Sat Nov 12 20:25:48 PST 2016
+base.0=/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ea08d33827e121b8ee55dc486274c5cd5466da99
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_974ed07dfc98a880989526620c2a69bc4c2c196f/classes.dex
+base.1=/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_974ed07dfc98a880989526620c2a69bc4c2c196f
+file.0=/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ea08d33827e121b8ee55dc486274c5cd5466da99/classes.dex

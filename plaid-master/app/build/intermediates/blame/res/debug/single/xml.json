@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/xml/shortcuts.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/xml/shortcuts.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/xml/searchable.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/xml/searchable.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/xml/glide_disk_cache_path.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/xml/glide_disk_cache_path.xml"
+    }
+]

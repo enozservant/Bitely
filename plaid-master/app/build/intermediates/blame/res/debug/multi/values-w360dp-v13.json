@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w360dp-v13/values-w360dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/values-w360dp/dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 661,
+                        "endColumn": 44,
+                        "endOffset": 701
+                    }
+                }
+            }
+        ]
+    }
+]

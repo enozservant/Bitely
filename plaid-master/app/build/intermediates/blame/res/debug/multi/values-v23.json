@@ -1,0 +1,239 @@
+[
+    {
+        "outputFile": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 56,
+                    "endOffset": 107
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/values-v23/colors.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 641,
+                        "endColumn": 56,
+                        "endOffset": 693
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 112,
+                    "endColumn": 134,
+                    "endOffset": 242
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 134,
+                        "endOffset": 185
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 247,
+                    "endColumn": 134,
+                    "endOffset": 377
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 190,
+                        "endColumn": 134,
+                        "endOffset": 320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 382,
+                    "endColumn": 74,
+                    "endOffset": 452
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 325,
+                        "endColumn": 74,
+                        "endOffset": 395
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 457,
+                    "endColumn": 86,
+                    "endOffset": 539
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 400,
+                        "endColumn": 86,
+                        "endOffset": 482
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 544,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 1329
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 487,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1272
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1334,
+                    "endLine": 32,
+                    "endColumn": 12,
+                    "endOffset": 2131
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1277,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 2074
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2136,
+                    "endColumn": 126,
+                    "endOffset": 2258
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 2079,
+                        "endColumn": 126,
+                        "endOffset": 2201
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2263,
+                    "endColumn": 104,
+                    "endOffset": 2363
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 2206,
+                        "endColumn": 104,
+                        "endOffset": 2306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2368,
+                    "endColumn": 114,
+                    "endOffset": 2478
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2311,
+                        "endColumn": 114,
+                        "endOffset": 2421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2483,
+                    "endColumn": 106,
+                    "endOffset": 2585
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 2426,
+                        "endColumn": 106,
+                        "endOffset": 2528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2590,
+                    "endColumn": 112,
+                    "endOffset": 2698
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 2533,
+                        "endColumn": 112,
+                        "endOffset": 2641
+                    }
+                }
+            }
+        ]
+    }
+]

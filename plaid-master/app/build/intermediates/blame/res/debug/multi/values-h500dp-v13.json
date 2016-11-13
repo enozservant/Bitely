@@ -1,0 +1,64 @@
+[
+    {
+        "outputFile": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h500dp-v13/values-h500dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/values-h500dp/dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 788,
+                        "endColumn": 51,
+                        "endOffset": 835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 65,
+                    "endOffset": 168
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/values-h500dp/dimens.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 840,
+                        "endColumn": 65,
+                        "endOffset": 901
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 173,
+                    "endColumn": 53,
+                    "endOffset": 222
+                },
+                "from": {
+                    "file": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/values-h500dp/dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 671,
+                        "endColumn": 53,
+                        "endOffset": 720
+                    }
+                }
+            }
+        ]
+    }
+]

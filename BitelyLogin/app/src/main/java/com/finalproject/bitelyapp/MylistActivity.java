@@ -5,10 +5,11 @@ package com.finalproject.bitelyapp;
  */
 
 
-import java.util.*;
 import android.app.ListActivity;
 import android.os.Bundle;
-import android.widget.*;
+import android.widget.ArrayAdapter;
+
+import java.util.ArrayList;
 
 class Contact{
     String nume;
@@ -33,6 +34,8 @@ public class MylistActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_list);
+
+        //Intent intent = getIntent();
 
         lista = new ArrayList<Contact>();
         adaugaContact("Florian", "Iancu");

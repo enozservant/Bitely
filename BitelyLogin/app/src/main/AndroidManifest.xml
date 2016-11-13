@@ -21,6 +21,9 @@
             android:name="com.finalproject.bitelyapp.LoginActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
+            android:name="com.finalproject.bitelyapp.MylistActivity"
+            android:label="MylistActivity"/>
+        <activity
             android:name="com.finalproject.bitelyapp.SignupActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_e25e090b2992a99b2f33ca9d69ad47eb47b181b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_56f67b13f0d6494f897a0cc57463a1a31cde609d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_4b15316ceaf9f1459356a4a299d5de8666e753ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_45c37426849feee2ac3210b270ec0349619d84a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_5a277212a66461ba3e99db1c2accaad0f191f51d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_4b0f3635eb0b1b2db2209f426745bae5b4697798/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.github.bumptech.glide/okhttp3-integration/1.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07a1832fdb6b44c0f4ec761ac3de02bfd3508269">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.bumptech.glide-okhttp3-integration-1.4.0_4419092ce3703e831202f2dd7416a3b4b9fda16a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_1d7ecba9042881221bf40ae375e61f04e4d1533c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_d7690297edaa62e9a4006c801ac6575c25cf5938/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.9.2/5e3bda828a80c7a21dfbe2308d1755759c2fd7b4/jsoup-1.9.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e3bda828a80c7a21dfbe2308d1755759c2fd7b4">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsoup-1.9.2_32785553009352d966cc86d11e8c14e61823ce10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fb21ea4f0e6446358f8408b6dfe8d7d4104293d">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ea08d33827e121b8ee55dc486274c5cd5466da99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_cb21136fd51007201c3fa0136053a7aab1e7ce07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9fc69c9eb208228b7feef1d3108ef28a16cc3abf">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.3.0_fddb2e2668755c6f648e46c3328a3a85c7f3d8e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_3a59d508e762111ee9ad5582e358d5ff1b840eaa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_cfbb484a6e23d839f6d2206896911c5442f0a04c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_32e7a9d6ec8f6506845ca34de3ecd98a2ea54c24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_d4a04b2be7dd56f54e864cb4f5c36552d45d4e13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_1ab9b8877ef47c115b880221ade7a4281e57b1ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_7909eaf2c8bbed09245726d9cb0ad66aaac2ab8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-25.0.0_06efb2837ac129414a9245e9761465ce86571020/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_a3f632831f628e147a355eec6c38e997b3d86793/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_a8cf1f18030aecb8e9fdc481e98a6925c1480fee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_0b50c7352d07c186c93cb1836ce90e3a1f1e8980/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_c9f207834b60c618fd2213d3c9762d329bf2562f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_e928fd2cfeeedb0349207b8d5b7e5a33c857672b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-beta3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b81d40d208a3308c8e81b2cccd3054238a13d140">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-beta3_08eaeff2d635b0311b623e2128371ed5fa8d4eae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_2a76ae15ad0240ae9f46a09350203ac5a6337438/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta3/constraint-layout-solver-1.0.0-beta3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="22c1e9d26251df254de7cc9dee01f5f134b10eba">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta3_5b6edf8093b97f5079ba4e9e05802ade3364e6a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_be953bee4715809c1843c9bcd34d5dfd09d28baa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_16168b6fc12f2ef074893320f05d1a2ca44236d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.3.0/e1707f3752463c5d240f427240a54762d7b60474/butterknife-annotations-8.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e1707f3752463c5d240f427240a54762d7b60474">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.3.0_f14ffa4f84edab6b29ac1cf54865254eadcdee3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/palette-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="672cceae26e9a8fcbd8e0eefe5fc351c50d2488a">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-25.0.0_c1af0900458115ab8a637144c26a507bbc2491ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_1d47f169de3094ec45ccf21f8cba30d65de01d8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d6f2c913d8b300d7ab3ed92762341eee8d629228">
+        <dex dex="/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_974ed07dfc98a880989526620c2a69bc4c2c196f/classes.dex" />
+    </item>
+
+</items>

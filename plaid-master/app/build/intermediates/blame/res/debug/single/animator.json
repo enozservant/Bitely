@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/share_lines.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/share_lines.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/filter_active.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/filter_active.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/minus_to_plus.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/minus_to_plus.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/close_to_down_trim_legs.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/close_to_down_trim_legs.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/show_connection_line.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/show_connection_line.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/heart_break_right_rotate.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/heart_break_right_rotate.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/shots_below_morph.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/shots_below_morph.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/selected_comment.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/selected_comment.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/down_to_close.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/down_to_close.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_fade_out.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_fade_out.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_tick_to_plus.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_tick_to_plus.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/disable_text_entry.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/disable_text_entry.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_progress.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_progress.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/heart_break_left_rotate.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/heart_break_left_rotate.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_stem_search_to_back.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_stem_search_to_back.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/app_bar_pin.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/app_bar_pin.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/followers_lefty.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/followers_lefty.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/down_to_close_show_legs.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/down_to_close_show_legs.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upvote.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upvote.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_progress_rotation.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_progress_rotation.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/comment_fade_empty_heart.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/comment_fade_empty_heart.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/comment_lines_add_rotate.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/comment_lines_add_rotate.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/plus_to_minus.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/plus_to_minus.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_show_circle.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_show_circle.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_hide_arrow_head_move.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_hide_arrow_head_move.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_complete.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_complete.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/shots_below_move.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/shots_below_move.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/comment_expand_full_heart.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/comment_expand_full_heart.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_error_show_icon.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_error_show_icon.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/active_raise.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/active_raise.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_hide_arrow_head.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_hide_arrow_head.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_error_background.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_error_background.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/heart_break_draw_stroke.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/heart_break_draw_stroke.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/close_to_down.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/close_to_down.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/upload_arrow_fill.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/upload_arrow_fill.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_stem_back_to_search.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_stem_back_to_search.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/comment_lines_to_add.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/comment_lines_to_add.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/heart_break_fade_out.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/heart_break_fade_out.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/comment_add_to_lines.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/comment_add_to_lines.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/show_connection_cross.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/show_connection_cross.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_hide_circle.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_hide_circle.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/comment_selection.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/comment_selection.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/raise.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/raise.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/no_shots.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/no_shots.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_show_arrow_head_move.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_show_arrow_head_move.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/followers_righty.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/followers_righty.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/button_frown.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/button_frown.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/share_dots.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/share_dots.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/plus_minus_rotate.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/plus_minus_rotate.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/searchback_show_arrow_head.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/searchback_show_arrow_head.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/look_around.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/look_around.xml"
+    },
+    {
+        "merged": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/build/intermediates/res/merged/debug/animator/heartbeat.xml",
+        "source": "/Users/ElenaHe/Desktop/Bitely/plaid-master/app/src/main/res/animator/heartbeat.xml"
+    }
+]
