@@ -24,17 +24,17 @@
             android:name=".SignupActivity"
             android:theme="@style/AppTheme.Dark" />
         <activity
-            android:name=".MainScreenLogged"
+            android:name=".HomeScreen"
             android:label="@string/title_activity_main_screen_logged"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BiteMeActivity"
             android:label="@string/title_activity_bite_me"
-            android:parentActivityName=".MainScreenLogged"
+            android:parentActivityName=".HomeScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.finalproject.bitelyapp.MainScreenLogged" />
+                android:value="com.finalproject.bitelyapp.HomeScreen" />
         </activity>
     </application>
 

@@ -15,9 +15,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainScreenLogged extends AppCompatActivity
+public class HomeScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    public static final String TAG = "MainScreenLogged";
+    public static final String TAG = "HomeScreen";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,7 +86,7 @@ public class MainScreenLogged extends AppCompatActivity
         {
             // Handle the home screen action
             Log.i(TAG,"I'm Here");
-            Intent i = new Intent(this, MainScreenLogged.class);
+            Intent i = new Intent(this, HomeScreen.class);
             this.startActivity(i);
         } else if (id == R.id.nav_my_list)
         {
