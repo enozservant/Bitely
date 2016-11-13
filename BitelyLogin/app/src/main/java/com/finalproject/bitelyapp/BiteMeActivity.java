@@ -8,18 +8,17 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainScreenLogged extends AppCompatActivity
+public class BiteMeActivity extends HomeScreen
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen_logged);
+        setContentView(R.layout.activity_bite_me);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +54,7 @@ public class MainScreenLogged extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_screen_logged, menu);
+        getMenuInflater().inflate(R.menu.bite_me, menu);
         return true;
     }
 
@@ -80,24 +79,18 @@ public class MainScreenLogged extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home_screen)
-        {
-            // Handle the home screen action
-        } else if (id == R.id.nav_my_list)
-        {
-            // Handle the my list action
-        } else if (id == R.id.nav_trending)
-        {
-            // Handle the trending action
-        } else if (id == R.id.nav_my_friends)
-        {
-            // Handle the my my friends action
-        } else if (id == R.id.nav_browse_screen)
-        {
-            // Handle the my browse screen action
-        } else if (id == R.id.nav_user_profile)
-        {
-            // Handle the nav user profile action
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_manage) {
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

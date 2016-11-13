@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                    Intent intent = new Intent(getApplicationContext(), MainScreenLogged.class);
+                    Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                     startActivity(intent);
                 } else {
                     // User is signed out
@@ -135,11 +135,12 @@ public class LoginActivity extends AppCompatActivity {
                         else
                         {
                             // loginSuccess();
-                            Intent intent = new Intent(getApplicationContext(), MainScreenLogged.class);
+                            Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                             startActivity(intent);
                         }
                     }
                 });
+
 
     }
 
@@ -154,7 +155,7 @@ public class LoginActivity extends AppCompatActivity {
     {
         _loginButton.setEnabled(true);
         finish();
-        Intent intent = new Intent(getApplicationContext(), MainScreenLogged.class);
+        Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
         startActivity(intent);
     }
 
