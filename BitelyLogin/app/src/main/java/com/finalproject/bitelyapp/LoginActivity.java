@@ -51,6 +51,8 @@ public class LoginActivity extends AppCompatActivity {
     Button _loginButton;
     @Bind(R.id.link_signup)
     TextView _signupLink;
+    @Bind(R.id.link_guest)
+    TextView _guestLink;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -93,6 +95,16 @@ public class LoginActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_SIGNUP);
                 finish();
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+            }
+        });
+
+        _guestLink.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HomeScreenGuest.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

@@ -46,6 +46,7 @@ public class SignupActivity extends AppCompatActivity {
     @Bind(R.id.input_reEnterPassword) EditText _reEnterPasswordText;
     @Bind(R.id.btn_signup) Button _signupButton;
     @Bind(R.id.link_login) TextView _loginLink;
+    // @Bind(R.id.btn_signup) Button _signupButton;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
