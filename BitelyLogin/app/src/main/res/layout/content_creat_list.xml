@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_creat_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.finalproject.bitelyapp.CreatListActivity"
+    tools:showIn="@layout/app_bar_creat_list">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/mint_green">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <include layout="@layout/tool_bar_create_list"/>
+
+                <EditText
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Input List Name"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:id="@+id/new_list_name"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_photo"
+                    android:layout_gravity="center"
+                    android:id="@+id/new_list_pic"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="0.18" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_circle_2"
+                    android:layout_gravity="center"
+                    android:background="@color/mint_green"
+                    android:id="@+id/add_restuarant_button" />
+
+                <Button
+                    android:text="Create List"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="230dp"
+                    android:textColor="@color/avocado_black"
+                    android:background="@color/tiffany_blue"
+                    android:id="@+id/create_list_button"
+                    android:layout_weight="1.83" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</RelativeLayout>

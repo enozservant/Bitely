@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Material Login Example</string>
+    <string name="app_name">Bitely</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -9,4 +9,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_bite_me">BiteMeActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_creat_list">CreatListActivity</string>
 </resources>
