@@ -30,4 +30,8 @@ public class CustomList {
     public void addRestaurant(Restaurant r){
         content.add(r);
     }
+
+    public void removeRestaurant(Restaurant r){
+        content.remove(r);
+    }
 }

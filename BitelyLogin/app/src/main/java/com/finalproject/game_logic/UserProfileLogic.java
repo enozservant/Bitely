@@ -54,5 +54,18 @@ public class UserProfileLogic {
             return count;
         }
     }
+
+    //get a quantified score of how well a restaurant matches with the user profile
+    public int getMatchingScore(Restaurant r){
+        int score = 0;
+        List<String> tags = r.getTags();
+        for (String eachTag : tags){
+            score += getWeight(eachTag);
+        }
+        score += r.getRating();
+
+
+        return score;
+    }
     
 }

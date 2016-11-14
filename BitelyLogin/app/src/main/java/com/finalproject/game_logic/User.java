@@ -47,12 +47,30 @@ public class User {
         }
     }
 
+    public UserProfileLogic getProfile(){
+        return profile;
+    }
+
     public List<Restaurant> getSurroundingRestaurants(){
+
+        //TODO: get surrounding restaurants based on user location
+
         return new ArrayList<Restaurant>();
     }
 
     public void addToList(Restaurant toAdd, CustomList toList){
         toList.addRestaurant(toAdd);
+        restaurants.add(toAdd);
+    }
+
+    public void removeFromList(Restaurant toRemove, CustomList fromList){
+        fromList.removeRestaurant(toRemove);
+        restaurants.remove(toRemove);
+    }
+
+    public List<Restaurant> generateDiscoverWeekly(){
+        DiscoverWeeklyLogic dl = new DiscoverWeeklyLogic();
+        return dl.generateDiscovery(this);
     }
 
 
