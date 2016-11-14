@@ -31,7 +31,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HomeScreenGuest"
-            android:label="@string/title_activity_main_screen_logged"
+            android:label="@string/title_activity_main_screen_guest"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LogoutActivity"
