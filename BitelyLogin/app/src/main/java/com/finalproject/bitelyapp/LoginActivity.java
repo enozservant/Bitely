@@ -51,6 +51,8 @@ public class LoginActivity extends AppCompatActivity {
     Button _loginButton;
     @Bind(R.id.link_signup)
     TextView _signupLink;
+    @Bind(R.id.link_guest)
+    TextView _guestLink;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -95,6 +97,16 @@ public class LoginActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
+
+        _guestLink.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HomeScreenGuest.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void login() {
@@ -124,6 +136,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+                        progressDialog.dismiss();
 
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
@@ -131,6 +144,9 @@ public class LoginActivity extends AppCompatActivity {
                         if (!task.isSuccessful())
                         {
                             Log.w(TAG, "signInWithEmail", task.getException());
+                            Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
+                            _loginButton.setEnabled(true);
+
                         }
                         else
                         {
