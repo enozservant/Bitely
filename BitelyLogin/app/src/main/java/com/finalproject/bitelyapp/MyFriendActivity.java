@@ -1,21 +1,16 @@
 package com.finalproject.bitelyapp;
 
-/**
- * Created by ElenaHe on 11/12/16.
- */
-
-
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
-class Contact{
+class User{
     String nume;
     String prenume;
 
-    Contact(String nume, String prenume){
+    User(String nume, String prenume){
         this.nume=nume;
         this.prenume=prenume;
     }
@@ -25,9 +20,9 @@ class Contact{
     }
 }
 
-public class MylistActivity extends ListActivity {
-    ArrayList<Contact> lista;
-    ArrayAdapter <Contact> adaptor;
+public class MyFriendActivity extends ListActivity {
+    ArrayList<User> lista;
+    ArrayAdapter<User> adaptor;
 
     /** Called when the activity is first created. */
     @Override
@@ -35,9 +30,9 @@ public class MylistActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_list);
 
-        lista = new ArrayList<Contact>();
+        lista = new ArrayList<User>();
 
-        adaptor = new ArrayAdapter<Contact>(this,R.layout.list_item, lista);
+        adaptor = new ArrayAdapter<User>(this,R.layout.list_item, lista);
         adaugaContact("Florian", "Iancu");
         adaugaContact("Ioana", "Constantina");
 
@@ -45,7 +40,7 @@ public class MylistActivity extends ListActivity {
     }
 
     public void adaugaContact(String nume, String prenume) {
-        lista.add(new Contact(nume, prenume));
+        lista.add(new User(nume, prenume));
         adaptor.notifyDataSetChanged();
     }
 }

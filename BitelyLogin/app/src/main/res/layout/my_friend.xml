@@ -17,10 +17,6 @@
         android:textSize="36sp"
         android:gravity="center"
         />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"/>
 
     <ImageButton
         android:layout_width="match_parent"
@@ -28,6 +24,11 @@
         android:src="@drawable/ic_circle_2"
         android:id="@+id/imageButton"
         android:layout_weight="0.20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <ListView
         android:id="@android:id/list"
