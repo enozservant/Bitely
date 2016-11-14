@@ -38,8 +38,8 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseDatabase mDatabase;
     private DatabaseReference mDatabaseRef;
 
-    @Bind(R.id.input_name) EditText _nameText;
-    @Bind(R.id.input_address) EditText _addressText;
+    @Bind(R.id.input_first_name) EditText _firstNameText;
+    @Bind(R.id.input_last_name) EditText _lastNameText;
     @Bind(R.id.input_email) EditText _emailText;
     @Bind(R.id.input_mobile) EditText _mobileText;
     @Bind(R.id.input_password) EditText _passwordText;
@@ -105,12 +105,8 @@ public class SignupActivity extends AppCompatActivity {
         progressDialog.setMessage("Creating Account...");
         progressDialog.show();
 
-        String name = _nameText.getText().toString();
-        String address = _addressText.getText().toString();
         String email = _emailText.getText().toString();
-        String mobile = _mobileText.getText().toString();
         String password = _passwordText.getText().toString();
-        String reEnterPassword = _reEnterPasswordText.getText().toString();
 
         // TODO: Implement your own signup logic here.
 
@@ -159,25 +155,25 @@ public class SignupActivity extends AppCompatActivity {
     public boolean validate() {
         boolean valid = true;
 
-        String name = _nameText.getText().toString();
-        String address = _addressText.getText().toString();
+        String firstName = _firstNameText.getText().toString();
+        String lastName = _lastNameText.getText().toString();
         String email = _emailText.getText().toString();
         String mobile = _mobileText.getText().toString();
         String password = _passwordText.getText().toString();
         String reEnterPassword = _reEnterPasswordText.getText().toString();
 
-        if (name.isEmpty() || name.length() < 3) {
-            _nameText.setError("at least 3 characters");
+        if (firstName.isEmpty() || firstName.length() < 3) {
+            _firstNameText.setError("at least 3 characters");
             valid = false;
         } else {
-            _nameText.setError(null);
+            _firstNameText.setError(null);
         }
 
-        if (address.isEmpty()) {
-            _addressText.setError("Enter Valid Address");
+        if (lastName.isEmpty() || lastName.length() < 3) {
+            _lastNameText.setError("at least 3 characters");
             valid = false;
         } else {
-            _addressText.setError(null);
+            _lastNameText.setError(null);
         }
 
 
@@ -195,14 +191,14 @@ public class SignupActivity extends AppCompatActivity {
             _mobileText.setError(null);
         }
 
-        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
+        if (password.isEmpty() || password.length() < 6 || password.length() > 50) {
+            _passwordText.setError("between 6 and 50 alphanumeric characters");
             valid = false;
         } else {
             _passwordText.setError(null);
         }
 
-        if (reEnterPassword.isEmpty() || reEnterPassword.length() < 4 || reEnterPassword.length() > 10 || !(reEnterPassword.equals(password))) {
+        if (reEnterPassword.isEmpty() || reEnterPassword.length() < 6 || reEnterPassword.length() > 50 || !(reEnterPassword.equals(password))) {
             _reEnterPasswordText.setError("Password Do not match");
             valid = false;
         } else {
@@ -234,22 +230,16 @@ public class SignupActivity extends AppCompatActivity {
         mFirebaseUser = mFirebaseAuth.getCurrentUser();
         String uid = mFirebaseUser.getUid();
 
-        String name = _nameText.getText().toString();
-        // need a last name field
-        String address = _addressText.getText().toString();
+        String firstName = _firstNameText.getText().toString();
+        String lastName = _lastNameText.getText().toString();
         String phoneNumber = _mobileText.getText().toString();
-        // String password = _passwordText.getText().toString();
-        // String reEnterPassword = _reEnterPasswordText.getText().toString();
-
-        // String username = _username.getText().toString();        // TODO: Make a username field
 
 
         User newUser = new User();
-        newUser.setFirstName(name);         // TODO: make a first name and last name field
-        newUser.setLastName(name);
         newUser.setUID(uid);
+        newUser.setFirstName(firstName);
+        newUser.setLastName(lastName);
         newUser.setPhoneNumer(phoneNumber);
-        newUser.setUsername(name);      // TODO: username
 
 
 

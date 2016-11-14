@@ -1,5 +1,6 @@
 package com.finalproject.bitelyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -46,7 +47,13 @@ public class LogoutActivity  extends AppCompatActivity
     public void logout()
     {
         // if the user is logged in, log them out
-        mFirebaseAuth.signOut();
+        if(mFirebaseAuth != null)
+        {
+            mFirebaseAuth.signOut();
+        }
+
+        // navigate back to the login screen
+        startActivity(new Intent(LogoutActivity.this, LoginActivity.class));
     }
 
 

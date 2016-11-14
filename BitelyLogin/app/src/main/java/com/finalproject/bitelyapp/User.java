@@ -9,10 +9,10 @@ import java.util.ArrayList;
  */
 
 public class User {
-    private String username;
+
+    private String UID;
     private String firstName;
     private String lastName;
-    private String UID;
     private String phoneNumber;
 
     private ArrayList<User> friendList;
@@ -35,13 +35,14 @@ public class User {
      * Accessor methods for class variables
      */
 
+    public void setUID(String UID)
+    {
+        this.UID = UID;
+    }
+
     public void addFriend(User friend)
     {
         friendList.add(friend);
-    }
-    public void setUsername(String username)
-    {
-        this.username = username;
     }
 
     public void setFirstName(String firstName)
@@ -49,15 +50,9 @@ public class User {
         this.firstName = firstName;
     }
 
-
     public void setLastName(String lastName)
     {
         this.lastName = lastName;
-    }
-
-    public void setUID(String UID)
-    {
-        this.UID = UID;
     }
 
     public void setPhoneNumer(String phoneNumber)
@@ -69,9 +64,10 @@ public class User {
      * Getter methods for class variables
      */
 
-    public String getUsername()
+
+    public String getUID()
     {
-        return this.username;
+        return this.UID;
     }
 
     public String getLastName()
@@ -82,11 +78,6 @@ public class User {
     public String getFirstName()
     {
         return this.firstName;
-    }
-
-    public String getUID()
-    {
-        return this.UID;
     }
 
     public String getPhoneNumber()
