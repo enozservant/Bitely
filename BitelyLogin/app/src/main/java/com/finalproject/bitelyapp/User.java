@@ -15,6 +15,8 @@ public class User {
     private String lastName;
     private String phoneNumber;
 
+    // private boolean isLoggedIn
+
     private ArrayList<User> friendList;
     private ArrayList<User> restaurantList;
     private ArrayList<User> listOfOwnedList;

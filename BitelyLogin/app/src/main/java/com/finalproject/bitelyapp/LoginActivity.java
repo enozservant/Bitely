@@ -29,6 +29,7 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
+    private static final String LOGIN_STATUS = "LOGIN_STATUS";
     private static final int REQUEST_SIGNUP = 0;
 
     private String email;
@@ -70,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                    intent.putExtra(LOGIN_STATUS, true);
                     startActivity(intent);
                 } else {
                     // User is signed out
@@ -102,7 +104,9 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), HomeScreenGuest.class);
+                // Intent intent = new Intent(getApplicationContext(), HomeScreenGuest.class);
+                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                intent.putExtra(LOGIN_STATUS, false);
                 startActivity(intent);
                 finish();
             }
@@ -152,6 +156,7 @@ public class LoginActivity extends AppCompatActivity {
                         {
                             // loginSuccess();
                             Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                            intent.putExtra(LOGIN_STATUS, true);
                             startActivity(intent);
                         }
                     }

@@ -54,7 +54,7 @@ public class BiteMeActivity extends HomeScreen
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.bite_me, menu);
+        getMenuInflater().inflate(R.menu.main_screen_logged, menu);
         return true;
     }
 

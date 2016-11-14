@@ -17,13 +17,35 @@ import android.view.View;
 
 public class HomeScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private NavigationView navigationView;
+    private static final String LOGIN_STATUS = "LOGIN_STATUS";
+    private boolean isLoggedIn = false;
     public static final String TAG = "HomeScreen";
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen_logged);
+
+        // retrieve intent extra if the user is logged in
+        isLoggedIn = getIntent().getExtras().getBoolean(LOGIN_STATUS);
+
+
+        if(isLoggedIn)
+        {
+            setContentView(R.layout.activity_main_screen_logged);
+        }
+        else
+        {
+            setContentView(R.layout.activity_main_screen_guest);
+        }
+        // setContentView(R.layout.activity_main_screen_logged);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +62,14 @@ public class HomeScreen extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        if(isLoggedIn)
+        {
+            navigationView = (NavigationView) findViewById(R.id.nav_view);
+        }
+        else
+        {
+            navigationView = (NavigationView) findViewById(R.id.nav_view_guest);
+        }
         navigationView.setNavigationItemSelectedListener(this);
     }
 
@@ -57,7 +86,14 @@ public class HomeScreen extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_screen_logged, menu);
+        if(isLoggedIn)
+        {
+            getMenuInflater().inflate(R.menu.main_screen_logged, menu);
+        }
+        else
+        {
+            getMenuInflater().inflate(R.menu.main_screen_logged, menu);
+        }
         return true;
     }
 
