@@ -59,13 +59,11 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="this is the location of the restaurant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/text_location" />
+                    android:id="@+id/restaurant_location" />
 
                 <TextView
-                    android:text="this displays all the tags"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/text_tags" />
@@ -74,9 +72,8 @@
         </LinearLayout>
 
         <TextView
-            android:text='"this is the shitties restaurant on the planet"'
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text_quote" />
+            android:id="@+id/restaurant_comment" />
     </LinearLayout>
 </RelativeLayout>

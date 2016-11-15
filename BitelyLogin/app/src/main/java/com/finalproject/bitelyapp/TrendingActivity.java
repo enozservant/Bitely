@@ -107,10 +107,9 @@ public class TrendingActivity extends AppCompatActivity {
             restaurantItemsList.setName(businessList.get(i).name());
             restaurantItemsList.setImageURL(businessList.get(i).imageUrl());
 
-            if(businessList.get(i).reviews() != null && businessList.get(i).reviews().size() > 0)
-            {
-                restaurantItemsList.setComment(businessList.get(i).reviews().get(0).excerpt());
-            }
+            restaurantItemsList.setComment(businessList.get(i).snippetText());
+
+
 
 
             restaurantItemsList.setTags(businessList.get(i).categories());

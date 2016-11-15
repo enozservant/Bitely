@@ -39,11 +39,12 @@ public class CustomListAdapter extends BaseAdapter
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.trending_list_item_layout, null);
+            // convertView = layoutInflater.inflate(R.layout.trending_list_item_layout, null);
+            convertView = layoutInflater.inflate(R.layout.trending_item, null);
             holder = new ViewHolder();
-            holder.headlineView = (TextView) convertView.findViewById(R.id.title);
-            holder.reporterNameView = (TextView) convertView.findViewById(R.id.reporter);
-            holder.reportedDateView = (TextView) convertView.findViewById(R.id.date);
+            holder.nameView = (TextView) convertView.findViewById(R.id.title);
+            holder.commentView = (TextView) convertView.findViewById(R.id.restaurant_comment);
+            holder.locationView = (TextView) convertView.findViewById(R.id.restaurant_location);
             holder.imageView = (ImageView) convertView.findViewById(R.id.thumbImage);
             convertView.setTag(holder);
         } else {
@@ -51,9 +52,9 @@ public class CustomListAdapter extends BaseAdapter
         }
 
         ListItem newsItem = (ListItem) listData.get(position);
-        holder.headlineView.setText(newsItem.getName());
-        // holder.reporterNameView.setText("By, " + newsItem.getReporterName());
-        // holder.reportedDateView.setText(newsItem.getDate());
+        holder.nameView.setText(newsItem.getName());
+        holder.commentView.setText(newsItem.getComment());
+        holder.locationView.setText(newsItem.getLocation());
 
         if (holder.imageView != null) {
             new ImageDownloaderTask(holder.imageView).execute(newsItem.getImageURL());
@@ -63,9 +64,20 @@ public class CustomListAdapter extends BaseAdapter
     }
 
     static class ViewHolder {
-        TextView headlineView;
-        TextView reporterNameView;
-        TextView reportedDateView;
+        TextView nameView;
         ImageView imageView;
+        TextView commentView;
+        TextView starsView;
+        TextView locationView;
+        TextView tagsView;
     }
+
+    /*
+    private String imageURL;
+    private String name;
+    private String comment;
+    private Double stars;
+    private String location;
+    private String tags;
+     */
 }

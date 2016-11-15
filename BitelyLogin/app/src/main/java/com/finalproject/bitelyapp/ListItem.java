@@ -20,6 +20,7 @@ public class ListItem
     private Double stars;
     private String location;
     private String tags;
+    private String snippet;
 
     public ListItem()
     {
@@ -109,5 +110,15 @@ public class ListItem
     public String getTags()
     {
         return this.tags;
+    }
+
+    public void setSnippet(String snippet)
+    {
+        this.snippet = snippet;
+    }
+
+    public String getSnippet()
+    {
+        return this.snippet;
     }
 }
