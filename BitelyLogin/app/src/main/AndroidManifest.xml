@@ -39,7 +39,6 @@
         <activity
             android:name=".BiteMeActivity"
             android:label="@string/title_activity_bite_me"
-            android:parentActivityName=".HomeScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

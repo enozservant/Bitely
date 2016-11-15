@@ -13,10 +13,14 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class HomeScreenGuest extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
     public static final String TAG = "HomeScreenGuest";
+    private Button Biteme;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +45,18 @@ public class HomeScreenGuest extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view_guest);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Biteme = (Button) findViewById(R.id.biteMe);
+
+        Biteme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.print("RRR");
+                Intent i = new Intent(HomeScreenGuest.this, BiteMeActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override
