@@ -111,6 +111,8 @@ public class HomeScreen extends AppCompatActivity
         } else if (id == R.id.nav_trending)
         {
             // Handle the trending action
+            Intent intent = new Intent(this, TrendingActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_my_friends)
         {
             // Handle the my my friends action

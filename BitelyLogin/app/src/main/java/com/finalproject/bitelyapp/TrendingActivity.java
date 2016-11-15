@@ -1,8 +1,9 @@
 package com.finalproject.bitelyapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ListView;
 
 import com.yelp.clientlib.connection.YelpAPI;
 import com.yelp.clientlib.connection.YelpAPIFactory;
@@ -15,20 +16,43 @@ import java.util.HashMap;
 import java.util.Map;
 
 import retrofit2.Call;
-import retrofit2.Response;
 
 
 public class TrendingActivity extends AppCompatActivity {
 
     private final String TAG = "TrendingActivity";
 
+    ArrayList<ListItem> restaurantItemInfo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trending);
+
+        restaurantItemInfo = new ArrayList<ListItem>();
         callYelp("Los Angeles");
 
+        final ListView listView = (ListView) findViewById(R.id.trending_list);
+        listView.setAdapter(new CustomListAdapter(this, restaurantItemInfo));
+        /*
+        listView.setOnItemClickListener(new OnItemClickListener() {
 
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                ListItem newsData = (ListItem) listView.getItemAtPosition(position);
+                Toast.makeText(TrendingActivity.this, "Selected :" + " " + newsData, Toast.LENGTH_LONG).show();
+            }
+        });
+    */
+
+
+
+    }
+
+    private void initializeListView()
+    {
+        final ListView listView = (ListView) findViewById(R.id.trending_list);
+        listView.setAdapter(new CustomListAdapter(this, restaurantItemInfo));
     }
 
 
@@ -53,6 +77,8 @@ public class TrendingActivity extends AppCompatActivity {
 
                     ArrayList<Business> businesses = response.businesses();
 
+                    Log.d("YELP", businesses.size() + " responses received.");
+
                     populateListGUI(businesses);
 
                 } catch (IOException ioe){
@@ -63,11 +89,25 @@ public class TrendingActivity extends AppCompatActivity {
 
         Thread yelpThread = new Thread (r);
         yelpThread.start();
+
+       try
+       {
+            yelpThread.join();
+           initializeListView();
+
+        } catch(InterruptedException ie) { Log.d("YELP_THREAD", "Yelp thread interrupted"); }
     }
 
-    private void populateListGUI(ArrayList<Business> toShow){
-        for (int i = 0; i < toShow.size(); i++){
-            Log.i(TAG, toShow.get(i).name());
+    private void populateListGUI(ArrayList<Business> businessList){
+        for(int i = 0; i < businessList.size(); i++)
+        {
+            Log.i(TAG, businessList.get(i).name());
+            Log.i(TAG, businessList.get(i).imageUrl());
+            ListItem restaurantItemsList = new ListItem();
+            restaurantItemsList.setName(businessList.get(i).name());
+            restaurantItemsList.setImageURL(businessList.get(i).imageUrl());
+            // restaurantImagesUrl.add(businessList.get(i).imageUrl());
+            restaurantItemInfo.add(restaurantItemsList);
         }
     }
 }
