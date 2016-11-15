@@ -116,8 +116,8 @@ public class HomeScreen extends AppCompatActivity
         } else if (id == R.id.nav_my_friends)
         {
             // Handle the my my friends action
-            Intent i = new Intent(this, MyFriendActivity.class);
-            this.startActivity(i);
+            // Intent i = new Intent(this, MyFriendActivity.class);
+            // this.startActivity(i);
         } else if (id == R.id.nav_browse_screen)
         {
             // Handle the my browse screen action
