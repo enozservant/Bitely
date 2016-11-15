@@ -5,10 +5,14 @@ package com.finalproject.bitelyapp;
  */
 
 
-import java.util.*;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.*;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 class Contact{
     String nume;
@@ -35,10 +39,11 @@ public class MylistActivity extends ListActivity {
         setContentView(R.layout.my_list);
 
         lista = new ArrayList<Contact>();
-        adaugaContact("Florian", "Iancu");
-        adaugaContact("Ioana", "Constantina");
+
 
         adaptor = new ArrayAdapter<Contact>(this,R.layout.list_item, lista);
+        adaugaContact("Florian", "Iancu");
+        adaugaContact("Ioana", "Constantina");
 
         setListAdapter(adaptor);
     }
@@ -46,5 +51,10 @@ public class MylistActivity extends ListActivity {
     public void adaugaContact(String nume, String prenume) {
         lista.add(new Contact(nume, prenume));
         adaptor.notifyDataSetChanged();
+    }
+
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        Intent i = new Intent(this, MylistActivity.class);
+        startActivity(i);
     }
 }

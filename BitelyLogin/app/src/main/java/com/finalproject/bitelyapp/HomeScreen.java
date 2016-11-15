@@ -11,10 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class HomeScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private Button Biteme;
     public static final String TAG = "HomeScreen";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +43,19 @@ public class HomeScreen extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        Biteme = (Button) findViewById(R.id.biteMe);
+
+        Biteme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.print("RRR");
+                Intent i = new Intent(HomeScreen.this, BiteMeActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override
@@ -89,7 +106,7 @@ public class HomeScreen extends AppCompatActivity
         {
             // Handle the my list action
             Log.i(TAG,"BiteMeActivity in myList");
-            Intent i = new Intent(this, BiteMeActivity.class);
+            Intent i = new Intent(this, MylistActivity.class);
             this.startActivity(i);
         } else if (id == R.id.nav_trending)
         {
@@ -99,6 +116,8 @@ public class HomeScreen extends AppCompatActivity
         } else if (id == R.id.nav_my_friends)
         {
             // Handle the my my friends action
+            Intent i = new Intent(this, MyFriendActivity.class);
+            this.startActivity(i);
         } else if (id == R.id.nav_browse_screen)
         {
             // Handle the my browse screen action
