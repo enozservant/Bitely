@@ -46,6 +46,7 @@ public class CustomListAdapter extends BaseAdapter
             holder.commentView = (TextView) convertView.findViewById(R.id.restaurant_comment);
             holder.locationView = (TextView) convertView.findViewById(R.id.restaurant_location);
             holder.imageView = (ImageView) convertView.findViewById(R.id.thumbImage);
+            holder.starsView = (ImageView) convertView.findViewById(R.id.restaurant_rating);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -55,6 +56,8 @@ public class CustomListAdapter extends BaseAdapter
         holder.nameView.setText(newsItem.getName());
         holder.commentView.setText(newsItem.getComment());
         holder.locationView.setText(newsItem.getLocation());
+        holder.starsView.setImageBitmap(newsItem.getStarsBitmap());
+
 
         if (holder.imageView != null) {
             new ImageDownloaderTask(holder.imageView).execute(newsItem.getImageURL());
@@ -67,17 +70,8 @@ public class CustomListAdapter extends BaseAdapter
         TextView nameView;
         ImageView imageView;
         TextView commentView;
-        TextView starsView;
+        ImageView starsView;
         TextView locationView;
         TextView tagsView;
     }
-
-    /*
-    private String imageURL;
-    private String name;
-    private String comment;
-    private Double stars;
-    private String location;
-    private String tags;
-     */
 }
