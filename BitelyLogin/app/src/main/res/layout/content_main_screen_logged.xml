@@ -12,4 +12,113 @@
     tools:context="com.finalproject.bitelyapp.HomeScreen"
     tools:showIn="@layout/app_bar_main_screen_logged">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageButton
+                android:layout_width="49dp"
+                android:layout_height="52dp"
+                app:srcCompat="@android:drawable/ic_search_category_default"
+                android:id="@+id/imageButton3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/editText2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:text="User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"
+                android:layout_weight="0.19" />
+
+            <CheckBox
+                android:text="Restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox3"
+                android:layout_weight="0.18" />
+
+            <CheckBox
+                android:text="List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox4"
+                android:layout_weight="0.38" />
+        </LinearLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:text="Discover Weekly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usename"
+                    android:layout_weight="0.21"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#CCCCCC"
+                    android:dividerHeight="1dp"
+                    android:paddingLeft="2dp">
+                </ListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
 </RelativeLayout>
