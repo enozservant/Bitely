@@ -1,7 +1,7 @@
 package com.finalproject.bitelyapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.yelp.clientlib.connection.YelpAPI;
@@ -15,7 +15,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import retrofit2.Call;
-import retrofit2.Response;
 
 
 public class TrendingActivity extends AppCompatActivity {
@@ -68,6 +67,7 @@ public class TrendingActivity extends AppCompatActivity {
     private void populateListGUI(ArrayList<Business> toShow){
         for (int i = 0; i < toShow.size(); i++){
             Log.i(TAG, toShow.get(i).name());
+            Log.i(TAG, toShow.get(i).imageUrl());
         }
     }
 }

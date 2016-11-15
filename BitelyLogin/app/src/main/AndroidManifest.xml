@@ -34,6 +34,10 @@
             android:label="@string/title_activity_main_screen_guest"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".TrendingActivity"
+            android:label="TrendingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".LogoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
