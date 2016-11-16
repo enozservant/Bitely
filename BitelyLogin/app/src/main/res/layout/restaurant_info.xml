@@ -105,7 +105,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_circle_1"
+                app:srcCompat="@drawable/ic_people_3"
                 android:id="@+id/imageView5"
                 android:paddingLeft="10dp"/>
 
