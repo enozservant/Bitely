@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/restaurant_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -21,7 +22,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/resname"
+                android:id="@+id/restaurant_info_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Restaurant"
@@ -30,11 +31,12 @@
                 android:paddingBottom="4dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="225dp"
+                android:layout_height="225dp"
                 app:srcCompat="@drawable/ic_photo"
-                android:id="@+id/imageView2"
+                android:id="@+id/restaurant_info_image"
                 android:layout_weight="0.87" />
+
 
         </LinearLayout>
 
@@ -58,20 +60,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/ad"
-                android:text="Address:"
+                android:id="@+id/restaurant_info_address"
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 android:paddingBottom="4dp" />
 
-            <TextView
-                android:id="@+id/address"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:paddingLeft="10dp"
-                android:textSize="20dp"
-                android:paddingBottom="5dp" />
 
         </LinearLayout>
 
@@ -94,19 +87,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/ti"
-                android:text="Type:"
+                android:id="@+id/restaurant_info_type"
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
-                android:paddingBottom="4dp" />
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:paddingLeft="10dp"
-                android:textSize="20dp"
                 android:paddingBottom="4dp" />
         </LinearLayout>
 
@@ -127,21 +110,11 @@
                 android:paddingLeft="10dp"/>
 
             <TextView
-                android:id="@+id/pho"
+                android:id="@+id/restaurant_info_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone:"
                 android:paddingLeft="10dp"
-                android:textSize="18sp"
-                android:paddingBottom="4dp" />
-
-            <TextView
-                android:id="@+id/description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:paddingLeft="10dp"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:paddingBottom="4dp" />
         </LinearLayout>
 
@@ -188,4 +161,4 @@
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
