@@ -1,8 +1,12 @@
 package com.finalproject.bitelyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.yelp.clientlib.connection.YelpAPI;
@@ -21,6 +25,8 @@ import retrofit2.Call;
 public class TrendingActivity extends AppCompatActivity {
 
     private final String TAG = "TrendingActivity";
+    private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
+
 
     ArrayList<ListItem> restaurantItemInfo;
 
@@ -29,24 +35,27 @@ public class TrendingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trending);
 
+
         restaurantItemInfo = new ArrayList<ListItem>();
         callYelp("Los Angeles");
 
         final ListView listView = (ListView) findViewById(R.id.trending_list);
         listView.setAdapter(new CustomListAdapter(this, restaurantItemInfo));
-        /*
+
         listView.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                ListItem newsData = (ListItem) listView.getItemAtPosition(position);
-                Toast.makeText(TrendingActivity.this, "Selected :" + " " + newsData, Toast.LENGTH_LONG).show();
+                // ListItem newsData = (ListItem) listView.getItemAtPosition(position);
+                // Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItemInfo.get(position));
+
+                Intent intent = new Intent(TrendingActivity.this, RestaurantInfoActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
-    */
-
-
-
     }
 
     private void initializeListView()
@@ -101,12 +110,24 @@ public class TrendingActivity extends AppCompatActivity {
     private void populateListGUI(ArrayList<Business> businessList){
         for(int i = 0; i < businessList.size(); i++)
         {
-            Log.i(TAG, businessList.get(i).name());
-            Log.i(TAG, businessList.get(i).imageUrl());
+
             ListItem restaurantItemsList = new ListItem();
+
             restaurantItemsList.setName(businessList.get(i).name());
             restaurantItemsList.setImageURL(businessList.get(i).imageUrl());
-            // restaurantImagesUrl.add(businessList.get(i).imageUrl());
+            restaurantItemsList.setComment(businessList.get(i).snippetText());
+            restaurantItemsList.setLocation(businessList.get(i).location().displayAddress().get(0));
+            restaurantItemsList.setTags(businessList.get(i).categories());
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setPhoneNumber(businessList.get(i).displayPhone());
+
+            restaurantItemsList.setRatingURL(businessList.get(i).ratingImgUrlLarge());
+
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setReviewCount(businessList.get(i).reviewCount());
+
+
+
             restaurantItemInfo.add(restaurantItemsList);
         }
     }

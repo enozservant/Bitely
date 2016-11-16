@@ -26,10 +26,11 @@
             android:layout_height="match_parent">
 
             <ImageView
+
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 app:srcCompat="@drawable/ic_location"
-                android:id="@+id/restaurant_pic" />
+                android:id="@+id/thumbImage" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -43,10 +44,10 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:text="Cafe 84"
+                        android:id="@+id/title"
+                        android:hint="Cafe 84"
                         android:layout_width="215dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/restaurant_name"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -58,13 +59,11 @@
                 </LinearLayout>
 
                 <TextView
-                    android:text="this is the location of the restaurant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/text_location" />
+                    android:id="@+id/restaurant_location" />
 
                 <TextView
-                    android:text="this displays all the tags"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/text_tags" />
@@ -73,9 +72,8 @@
         </LinearLayout>
 
         <TextView
-            android:text='"this is the shitties restaurant on the planet"'
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text_quote" />
+            android:id="@+id/restaurant_comment" />
     </LinearLayout>
 </RelativeLayout>

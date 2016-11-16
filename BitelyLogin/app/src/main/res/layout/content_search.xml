@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.finalproject.bitelyapp.SearchActivity"
+    tools:showIn="@layout/app_bar_search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_search_category_default"
+                android:id="@+id/imageButton"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Search"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:editable="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittextstyle"
+                android:height="25dp"
+                android:layout_alignBottom="@+id/imageButton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_toEndOf="@+id/imageButton" />
+
+            <RadioButton
+                android:text="Users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:id="@+id/usersRadio" />
+
+            <RadioButton
+                android:text="Restaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/restaurantRadio"
+                android:layout_alignBaseline="@+id/usersRadio"
+                android:layout_alignBottom="@+id/usersRadio"
+                android:layout_toLeftOf="@+id/usersRadio"
+                android:layout_toStartOf="@+id/usersRadio"
+                android:checked="true" />
+
+            <RadioButton
+                android:text="Lists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listsRadio"
+                android:layout_alignBaseline="@+id/usersRadio"
+                android:layout_alignBottom="@+id/usersRadio"
+                android:layout_toRightOf="@+id/usersRadio"
+                android:layout_toEndOf="@+id/usersRadio" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/theList"
+                android:layout_below="@+id/usersRadio" />
+
+
+        </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>

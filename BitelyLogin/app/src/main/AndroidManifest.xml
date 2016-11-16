@@ -3,7 +3,9 @@
     package="com.finalproject.bitelyapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -42,6 +44,9 @@
             android:name=".LogoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".RestaurantInfoActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
             android:name=".BiteMeActivity"
             android:label="@string/title_activity_bite_me"
             android:theme="@style/AppTheme.NoActionBar">
@@ -57,20 +62,18 @@
             android:name=".CreateListActivity"
             android:label="@string/title_activity_creat_list"
             android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity-->
+            <!--android:name=".MyFriendActivity"-->
+            <!--android:label="@string/title_activity_creat_list"-->
+            <!--android:theme="@style/AppTheme.NoActionBar" />-->
         <activity
-            android:name=".MyFriendActivity"
-            android:label="MyFriendActivity"
+            android:name=".SearchActivity"
+            android:label="SearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MylistActivity"
             android:label="MyListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".ResterautinfoAcivity"
-            android:label="IndividualListActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
         <activity
             android:name=".IndividualListActivity"
             android:label="IndividualListActivity"
