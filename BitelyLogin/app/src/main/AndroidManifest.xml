@@ -43,6 +43,9 @@
             android:name=".LogoutActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".RestaurantInfoActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
             android:name=".BiteMeActivity"
             android:label="@string/title_activity_bite_me"
             android:theme="@style/AppTheme.NoActionBar">
@@ -66,7 +69,6 @@
             android:name=".MylistActivity"
             android:label="@string/title_activity_creat_list"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ResterautinfoAcivity"></activity>
     </application>
 
 </manifest>

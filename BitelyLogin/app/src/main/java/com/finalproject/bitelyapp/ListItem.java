@@ -25,10 +25,15 @@ public class ListItem implements Serializable
     private String imageURL;
     private String name;
     private String comment;
-    private Double stars;
+    private Double rating;
     private String location;
     private String tags;
     private String snippet;
+    private String phoneNumber;
+
+    private String ratingURL;
+
+    private int reviewCount;
 
     transient private Bitmap starsBitmap;
 
@@ -37,10 +42,12 @@ public class ListItem implements Serializable
         imageURL = "";
         name = "";
         comment = "";
-        stars = 0.0;
+        rating = 0.0;
         location = "";
         tags = "";
-        // starsBitmap = null;
+        phoneNumber = "";
+        ratingURL = "";
+        reviewCount = 0;
     }
 
 
@@ -69,20 +76,52 @@ public class ListItem implements Serializable
         return this.comment;
     }
 
+    public int getReviewCount()
+    {
+        return this.reviewCount;
+    }
+
+
+
+    public String getPhoneNumber()
+    {
+        return this.phoneNumber;
+    }
+
+    public String getRatingURL()
+    {
+        return this.ratingURL;
+    }
+
+    public void setRatingURL(String ratingURL)
+    {
+        this.ratingURL = ratingURL;
+    }
+
+    public void setReviewCount(int reviewCount)
+    {
+        this.reviewCount = reviewCount;
+    }
+
+    public String setPhoneNumber(String phoneNumber)
+    {
+        return this.phoneNumber;
+    }
+
     public void setComment(String comment)
     {
         this.comment = comment;
     }
 
-    public Double getStars()
+    public Double getRating()
     {
-        return this.stars;
+        return this.rating;
     }
 
-    public void setStars(Double stars)
+    public void setRating(Double rating)
     {
-        this.stars = stars;
-        setStarsBitmap(stars);
+        this.rating = rating;
+        setStarsBitmap(rating);
     }
 
     public void setLocation(String location)

@@ -56,7 +56,12 @@ public class CustomListAdapter extends BaseAdapter
         holder.nameView.setText(newsItem.getName());
         holder.commentView.setText(newsItem.getComment());
         holder.locationView.setText(newsItem.getLocation());
-        holder.starsView.setImageBitmap(newsItem.getStarsBitmap());
+        // holder.starsView.setImageBitmap(newsItem.getStarsBitmap());
+        if(holder.starsView != null)
+        {
+            new ImageDownloaderTask(holder.starsView).execute(newsItem.getRatingURL());
+        }
+
 
 
         if (holder.imageView != null) {

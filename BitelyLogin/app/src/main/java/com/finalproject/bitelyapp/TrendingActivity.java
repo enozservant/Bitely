@@ -28,12 +28,14 @@ public class TrendingActivity extends AppCompatActivity {
     private final String TAG = "TrendingActivity";
     private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
 
+
     ArrayList<ListItem> restaurantItemInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trending);
+
 
         restaurantItemInfo = new ArrayList<ListItem>();
         callYelp("Los Angeles");
@@ -50,13 +52,11 @@ public class TrendingActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItemInfo.get(position));
 
-                Intent intent = new Intent(this, Restaurant)
+                Intent intent = new Intent(TrendingActivity.this, RestaurantInfoActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
-
-
-
-
     }
 
     private void initializeListView()
@@ -111,23 +111,21 @@ public class TrendingActivity extends AppCompatActivity {
     private void populateListGUI(ArrayList<Business> businessList){
         for(int i = 0; i < businessList.size(); i++)
         {
-            Log.i(TAG, businessList.get(i).name());
-            Log.i(TAG, businessList.get(i).imageUrl());
+
             ListItem restaurantItemsList = new ListItem();
+
             restaurantItemsList.setName(businessList.get(i).name());
             restaurantItemsList.setImageURL(businessList.get(i).imageUrl());
-
             restaurantItemsList.setComment(businessList.get(i).snippetText());
-
-
-
-
+            restaurantItemsList.setLocation(businessList.get(i).location().displayAddress().get(0));
             restaurantItemsList.setTags(businessList.get(i).categories());
-            restaurantItemsList.setStars(businessList.get(i).rating());
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setPhoneNumber(businessList.get(i).displayPhone());
 
+            restaurantItemsList.setRatingURL(businessList.get(i).ratingImgUrlLarge());
 
-
-
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setReviewCount(businessList.get(i).reviewCount());
 
 
 
