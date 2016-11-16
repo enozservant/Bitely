@@ -25,7 +25,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="48dp">
+            android:layout_height="48dp"
+            android:weightSum="1">
 
             <ImageButton
                 android:layout_width="49dp"
@@ -34,19 +35,19 @@
                 android:id="@+id/imageButton3" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="195dp"
                 android:layout_height="match_parent"
                 android:inputType="textPersonName"
                 android:text="Name"
                 android:ems="10"
-                android:id="@+id/editText2" />
+                android:id="@+id/editText2"
+                android:layout_weight="2.20" />
 
             <Button
                 android:text="Search"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button3"
-                android:layout_weight="1" />
+                android:id="@+id/button3" />
 
         </LinearLayout>
 
@@ -86,20 +87,30 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="100dp"
             android:weightSum="1">
 
 
             <Button
                 android:text="Bite Me"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="41dp"
                 android:id="@+id/biteMe"
-                android:layout_weight="1" />
+                android:layout_weight="0.32" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
+
+            <TextView
+                android:text="Discover Weekly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usename"
+                android:layout_weight="0.21"
+                android:textSize="24sp"
+                android:gravity="center"
+                />
 
         </LinearLayout>
 
@@ -114,15 +125,6 @@
                 android:weightSum="1"
                 android:layout_centerHorizontal="true">
 
-                <TextView
-                    android:text="Discover Weekly"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/usename"
-                    android:layout_weight="0.21"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="10dp" />

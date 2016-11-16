@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ class Contact{
 public class MylistActivity extends ListActivity {
     ArrayList<Contact> lista;
     ArrayAdapter <Contact> adaptor;
+    private ImageButton addList;
 
     /** Called when the activity is first created. */
     @Override
@@ -46,6 +48,16 @@ public class MylistActivity extends ListActivity {
         adaugaContact("Ioana", "Constantina");
 
         setListAdapter(adaptor);
+        addList = (ImageButton) findViewById(R.id.addButton);
+
+        addList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.print("RRR");
+                Intent i = new Intent(MylistActivity.this,CreatListActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void adaugaContact(String nume, String prenume) {
@@ -57,4 +69,6 @@ public class MylistActivity extends ListActivity {
         Intent i = new Intent(this, MylistActivity.class);
         startActivity(i);
     }
+
+
 }
