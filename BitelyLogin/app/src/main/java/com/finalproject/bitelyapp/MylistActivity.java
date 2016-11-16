@@ -54,7 +54,7 @@ public class MylistActivity extends ListActivity {
             @Override
             public void onClick(View v) {
                 System.out.print("RRR");
-                Intent i = new Intent(MylistActivity.this,CreatListActivity.class);
+                Intent i = new Intent(MylistActivity.this, CreateListActivity.class);
                 startActivity(i);
             }
         });
@@ -66,7 +66,7 @@ public class MylistActivity extends ListActivity {
     }
 
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        Intent i = new Intent(this, MylistActivity.class);
+        Intent i = new Intent(this, IndividualListActivity.class);
         startActivity(i);
     }
 

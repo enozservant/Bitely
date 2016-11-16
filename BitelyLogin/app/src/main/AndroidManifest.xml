@@ -3,7 +3,7 @@
     package="com.finalproject.bitelyapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -54,18 +54,27 @@
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".CreatListActivity"
+            android:name=".CreateListActivity"
             android:label="@string/title_activity_creat_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MyFriendActivity"
-            android:label="@string/title_activity_creat_list"
+            android:label="MyFriendActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MylistActivity"
-            android:label="@string/title_activity_creat_list"
+            android:label="MyListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ResterautinfoAcivity"></activity>
+
+        <activity
+            android:name=".ResterautinfoAcivity"
+            android:label="IndividualListActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".IndividualListActivity"
+            android:label="IndividualListActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
