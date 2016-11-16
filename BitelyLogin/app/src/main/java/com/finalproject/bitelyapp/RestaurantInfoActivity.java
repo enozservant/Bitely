@@ -3,7 +3,7 @@ package com.finalproject.bitelyapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ResterautinfoAcivity extends AppCompatActivity {
+public class RestaurantInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

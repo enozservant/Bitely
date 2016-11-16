@@ -7,6 +7,7 @@ import android.util.Log;
 import com.yelp.clientlib.entities.Category;
 
 import java.io.File;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
@@ -14,8 +15,9 @@ import java.util.ArrayList;
  * Created by sorencraig on 11/14/16.
  */
 
-public class ListItem
+public class ListItem implements Serializable
 {
+    public static final long serialVersionUID = 9372487l;
     /*
      * This will be restaurant specific-info like tags, rating, price
      */
@@ -28,7 +30,7 @@ public class ListItem
     private String tags;
     private String snippet;
 
-    private Bitmap starsBitmap;
+    transient private Bitmap starsBitmap;
 
     public ListItem()
     {

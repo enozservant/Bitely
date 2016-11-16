@@ -1,9 +1,14 @@
 package com.finalproject.bitelyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.yelp.clientlib.connection.YelpAPI;
 import com.yelp.clientlib.connection.YelpAPIFactory;
@@ -21,6 +26,7 @@ import retrofit2.Call;
 public class TrendingActivity extends AppCompatActivity {
 
     private final String TAG = "TrendingActivity";
+    private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
 
     ArrayList<ListItem> restaurantItemInfo;
 
@@ -34,16 +40,20 @@ public class TrendingActivity extends AppCompatActivity {
 
         final ListView listView = (ListView) findViewById(R.id.trending_list);
         listView.setAdapter(new CustomListAdapter(this, restaurantItemInfo));
-        /*
+
         listView.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 ListItem newsData = (ListItem) listView.getItemAtPosition(position);
-                Toast.makeText(TrendingActivity.this, "Selected :" + " " + newsData, Toast.LENGTH_LONG).show();
+                Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItemInfo.get(position));
+
+                Intent intent = new Intent(this, Restaurant)
             }
         });
-    */
+
 
 
 
