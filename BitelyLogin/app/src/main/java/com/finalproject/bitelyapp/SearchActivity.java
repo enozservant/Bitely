@@ -138,7 +138,7 @@ public class SearchActivity extends AppCompatActivity
     private void initializeListView()
     {
         final ListView theRestaurantView = (ListView) findViewById(R.id.theList);
-        theRestaurantView.setAdapter(new CustomListAdapter(this, restaurantInformation));
+        theRestaurantView.setAdapter(new CustomListAdapter2(this, restaurantInformation));
     }
 
     @Override
