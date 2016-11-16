@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.yelp.clientlib.connection.YelpAPI;
 import com.yelp.clientlib.connection.YelpAPIFactory;
@@ -47,8 +46,8 @@ public class TrendingActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                ListItem newsData = (ListItem) listView.getItemAtPosition(position);
-                Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
+                // ListItem newsData = (ListItem) listView.getItemAtPosition(position);
+                // Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
                 Bundle bundle = new Bundle();
                 bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItemInfo.get(position));
 
