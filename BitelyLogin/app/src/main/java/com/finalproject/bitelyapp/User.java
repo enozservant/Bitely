@@ -1,5 +1,6 @@
 package com.finalproject.bitelyapp;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -8,12 +9,15 @@ import java.util.ArrayList;
  * Fully encapsulated class representing the user information
  */
 
-public class User {
+public class User implements Serializable
+{
+    public static final long serialVersionUID = 79382748l;
 
     private String UID;
     private String firstName;
     private String lastName;
     private String phoneNumber;
+    private String imageURL;
 
     private ArrayList<User> friendList;
     private ArrayList<User> restaurantList;
@@ -28,12 +32,22 @@ public class User {
         friendList = new ArrayList<User>();
         // listOfOwnedList = new ArrayList<List>();
         // listOfFollowedList = new ArrayList<List>();
+        UID = "";
+        firstName = "";
+        lastName = "";
+        phoneNumber = "";
+        imageURL = "";
 
     }
 
     /*
      * Accessor methods for class variables
      */
+
+    public String toString()
+    {
+        return this.firstName + " " + this.lastName;
+    }
 
     public void setUID(String UID)
     {
@@ -60,10 +74,14 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
+    public void setImageURL(String imageURL) { this.imageURL = imageURL; }
+
     /*
      * Getter methods for class variables
      */
 
+
+    public String getImageURL() { return this.imageURL; }
 
     public String getUID()
     {
