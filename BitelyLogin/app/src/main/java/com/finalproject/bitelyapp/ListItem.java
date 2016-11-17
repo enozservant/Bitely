@@ -55,7 +55,15 @@ public class ListItem implements Serializable
 
     public void setImageURL(String imageURL)
     {
-        this.imageURL = imageURL;
+        if(imageURL == null || imageURL.equals(""))
+        {
+            this.imageURL = "https://media-cdn.tripadvisor.com/media/photo-s/04/90/2d/60/not-your-average-joe.jpg";
+        }
+        else
+        {
+            this.imageURL = imageURL;
+        }
+
     }
 
     public String getName()
