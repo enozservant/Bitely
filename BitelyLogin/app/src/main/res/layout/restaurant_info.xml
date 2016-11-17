@@ -133,7 +133,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="goole"
+                android:text="google"
                 android:id="@+id/googlebutton"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
