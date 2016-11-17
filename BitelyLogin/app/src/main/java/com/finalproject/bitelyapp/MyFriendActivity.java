@@ -49,15 +49,29 @@ public class MyFriendActivity extends ListActivity
 
         // create dummy users
         User userOne = new User();
-        userOne.setFirstName("Soren");
-        userOne.setLastName("Craig");
+        userOne.setFirstName("Steve");
+        userOne.setLastName("Jobs");
+        userOne.setPhoneNumer("7608518162");
+        userOne.setImageURL("http://www.adweek.com/agencyspy/wp-content/uploads/sites/7/2015/06/steve-jobs.jpg");
+
 
         User userTwo = new User();
         userTwo.setFirstName("Bob");
         userTwo.setLastName("Dylan");
+        userOne.setPhoneNumer("7608518162");
+        userTwo.setImageURL("http://www.mojo4music.com/media/2014/02/Dylan-770.jpg");
 
+        // Jeffrey Miller
+        User millerUser = new User();
+        millerUser.setFirstName("Dr. Jeffrey");
+        millerUser.setLastName("Miller");
+        millerUser.setPhoneNumer("2137407129");
+        millerUser.setImageURL("https://pressroom.usc.edu/files/2015/01/JeffreyMiller-cropped.jpg");
+
+        // add the users to the list view
         addAContact(userOne);
         addAContact(userTwo);
+        addAContact(millerUser);
 
         setListAdapter(adapter);
     }

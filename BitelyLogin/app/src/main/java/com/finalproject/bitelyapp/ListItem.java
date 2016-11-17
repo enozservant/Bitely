@@ -1,12 +1,9 @@
 package com.finalproject.bitelyapp;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.util.Log;
 
 import com.yelp.clientlib.entities.Category;
 
-import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -121,7 +118,6 @@ public class ListItem implements Serializable
     public void setRating(Double rating)
     {
         this.rating = rating;
-        setStarsBitmap(rating);
     }
 
     public void setLocation(String location)
@@ -171,73 +167,5 @@ public class ListItem implements Serializable
     public String getSnippet()
     {
         return this.snippet;
-    }
-
-    public void setStarsBitmap(Double stars)
-    {
-        String fileName = "";
-        // decide what file
-        if(stars == 0)
-        {
-            fileName = "drawable/rating_0_star.png";
-        }
-        else if(stars == 0.5 || stars == 1.0)
-        {
-            fileName = "drawable/rating_1_star.png";
-        }
-        else if( stars == 1.5)
-        {
-            fileName = "drawable/rating_15_star.png";
-        }
-        else if(stars == 2.0)
-        {
-            fileName = "drawable/rating_2_star.png";
-        }
-        else if(stars == 2.5)
-        {
-            fileName = "drawable/rating_25_star.png";
-        }
-        else if(stars == 3.0)
-        {
-            fileName = "drawable/rating_3_star.png";
-        }
-        else if(stars == 3.5)
-        {
-            fileName = "drawable/rating_35_star.png";
-        }
-        else if(stars == 4.0)
-        {
-            fileName = "res/drawable/rating_4_star.png";
-        }
-        else if(stars == 4.5)
-        {
-            fileName = "res/drawable/rating_45_star.png";
-        }
-        else if(stars == 5.0)
-        {
-            fileName = "rating_5_star.png";
-        }
-        else
-        {
-            fileName = "res/drawable/rating_3_star.png";
-
-        }
-
-        try
-        {
-            starsBitmap = BitmapFactory.decodeFile(fileName);
-        }
-
-        catch (OutOfMemoryError e) {
-            Log.d("IMAGE", "FILE IS TOOOOO BIG");
-        }
-        File currentDir = new File("");
-        String filePath = currentDir.getPath();
-        Log.d("FILE_PATH", filePath);
-    }
-
-    public Bitmap getStarsBitmap()
-    {
-        return this.starsBitmap;
     }
 }

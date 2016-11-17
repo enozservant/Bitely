@@ -32,7 +32,6 @@
             <ImageView
                 android:layout_width="225dp"
                 android:layout_height="225dp"
-                app:srcCompat="@drawable/ic_money"
                 android:id="@+id/person_info_image"
                 android:layout_weight="0.87" />
 

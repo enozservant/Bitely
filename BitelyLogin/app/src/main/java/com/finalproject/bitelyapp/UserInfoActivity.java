@@ -1,10 +1,8 @@
 package com.finalproject.bitelyapp;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +23,8 @@ public class UserInfoActivity extends AppCompatActivity {
 
     private String displayReviewText;
 
+    private ImageView profilePicView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,21 +36,10 @@ public class UserInfoActivity extends AppCompatActivity {
 
        callButton = (Button) findViewById(R.id.call_user_button);
 
-        callButton.setOnClickListener(new View.OnClickListener() {
-
+        callButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                // call the friend
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:" + chosenUser.getPhoneNumber()));
-                /*
-                if (ActivityCompat.checkSelfPermission(UserInfoActivity.this,
-                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    return;
-                }
-                */
-                startActivity(callIntent);
-            }
+            public void onClick(View v) { call(); }
         });
 
         // get the restaurant item
@@ -58,25 +47,41 @@ public class UserInfoActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         chosenUser = (User) bundle.getSerializable(USER_CHOSEN);
 
-        // hardcode the user's phone number to test
-        chosenUser.setPhoneNumer("7608518162");
+
 
         // bind the view variables
         nameTextView = (TextView) findViewById(R.id.person_info_name);
+        profilePicView = (ImageView) findViewById(R.id.person_info_image);
         // locationTextView = (TextView) findViewById(R.id.restaurant_info_address);
         // typeTextView = (TextView) findViewById(R.id.restaurant_info_type);
         // ratingView = (TextView) findViewById(R.id.restaurant_info_rating);
-        // restaurantImage = (ImageView) findViewById(R.id.restaurant_info_image);
+        // restaurantImage = (ImageView) findViewById(R.id.person_info_image);
 
         // displayReviewText = chosenUser.getReviewCount() + " people have rated this restaurant";
 
 
         // set the values
         nameTextView.setText(chosenUser.toString());
+        new ImageDownloaderTask(profilePicView).execute(chosenUser.getImageURL());
         // locationTextView.setText(chosenUser.getLocation());
         // typeTextView.setText(chosenUser.getTags());
         // ratingView.setText(displayReviewText);
         // new ImageDownloaderTask(restaurantImage).execute(restaurantItem.getImageURL());
+    }
+
+    private void call()
+    {
+        // call the friend
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:" + chosenUser.getPhoneNumber()));
+        /*
+        if (ActivityCompat.checkSelfPermission(UserInfoActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
+        {
+          return;
+        }
+        */
+        startActivity(callIntent);
+
     }
 
 
