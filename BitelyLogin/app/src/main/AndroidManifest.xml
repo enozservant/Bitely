@@ -83,10 +83,19 @@
             android:name=".IndividualListActivity"
             android:label="IndividualListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
-            android:name=".ResterautinfoAcivity"
-            android:label="ResterautinfoAcivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".IndividualListForOtherUsersActivity"
+            android:label="IndividualListForOtherUsersActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IndividualUserActivity"
+            android:label="IndividualUserActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".RestaurantInfoActivity_2"
+            android:label="RestaurantInfoActivity_2"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

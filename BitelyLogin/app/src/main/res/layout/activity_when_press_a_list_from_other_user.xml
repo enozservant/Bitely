@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#fff">
@@ -10,17 +10,19 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#fff">
-            <include layout="@layout/tool_bar_click_on_an_user"/>
+            <include layout="@layout/tool_bar_click_on_a_list"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="#fff">
+                android:background="#fff"
+                android:weightSum="1">
 
                 <ImageView
                     android:id="@+id/list_pic"
@@ -43,7 +45,16 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginBottom="10dp"
                         android:textSize="20dp"
-                        android:text="10 Lists" />
+                        android:text="10 Restaurants" />
+
+                    <TextView
+                        android:id="@+id/num_ppl_follow_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20dp"
+                        android:text="10 Follows" />
 
                 </LinearLayout>
 
@@ -86,6 +97,12 @@
 
             </ScrollView>
 
+            <Button
+                android:text="Follow List"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_restaurant_button" />
         </LinearLayout>
 
     </ScrollView>

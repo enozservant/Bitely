@@ -1,5 +1,6 @@
 package com.finalproject.bitelyapp;
 
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,27 +11,15 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-class Restaurants{
-    String restaurantName;
-
-    Restaurants(String name){
-        restaurantName = name;
-    }
-
-    public String toString(){
-        return restaurantName;
-    }
-}
-
-public class IndividualListActivity extends ListActivity{
+public class IndividualListForOtherUsersActivity extends ListActivity{
     ArrayList<Restaurants> myRestaurants;
     ArrayAdapter<Restaurants> mAdapter;
-    private Button addRestaurant;
+    private Button addList;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_when_press_a_list);
+        setContentView(R.layout.activity_when_press_a_list_from_other_user);
 
         myRestaurants = new ArrayList<Restaurants>();
 
@@ -48,7 +37,7 @@ public class IndividualListActivity extends ListActivity{
 
         setListAdapter(mAdapter);
 
-        addRestaurant = (Button) findViewById(R.id.add_restaurant_button);
+        addList = (Button) findViewById(R.id.add_restaurant_button);
 
     }
 
@@ -63,4 +52,3 @@ public class IndividualListActivity extends ListActivity{
         startActivity(i);
     }
 }
-
