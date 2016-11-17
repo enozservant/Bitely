@@ -49,7 +49,13 @@ public class IndividualListActivity extends ListActivity{
         setListAdapter(mAdapter);
 
         addRestaurant = (Button) findViewById(R.id.add_restaurant_button);
-
+        addRestaurant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), SearchActivity.class);
+                view.getContext().startActivity(i);
+            }
+        });
     }
 
 
