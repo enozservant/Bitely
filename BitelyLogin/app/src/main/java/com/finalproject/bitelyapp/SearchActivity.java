@@ -1,30 +1,23 @@
 package com.finalproject.bitelyapp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RadioButton;
-import android.widget.AdapterView.OnItemClickListener;
 
 import com.yelp.clientlib.connection.YelpAPI;
 import com.yelp.clientlib.connection.YelpAPIFactory;
@@ -41,8 +34,9 @@ import retrofit2.Call;
 public class SearchActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    public static final String TAG = "helllloo enoch here";
-    ArrayList<ListItem> restaurantInformation;
+    public static final String TAG = "SEARCH_ACTIVITY";
+    public static final String RESTAURANT_CHOSEN = "Restaurant Chosen";
+    ArrayList<ListItem> restaurantItemInfo;
 
 
     @Override
@@ -84,7 +78,7 @@ public class SearchActivity extends AppCompatActivity
             }
         });
 
-        restaurantInformation = new ArrayList<>();
+        restaurantItemInfo = new ArrayList<>();
 
 //        ArrayList<String> search = new ArrayList<>();
 
@@ -93,7 +87,7 @@ public class SearchActivity extends AppCompatActivity
         searchYelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                restaurantInformation.clear();
+                restaurantItemInfo.clear();
                 String loc = "";
                 loc = searchThese.getText().toString();
                 callYelp(loc);
@@ -138,7 +132,22 @@ public class SearchActivity extends AppCompatActivity
     private void initializeListView()
     {
         final ListView theRestaurantView = (ListView) findViewById(R.id.theList);
-        theRestaurantView.setAdapter(new CustomListAdapter2(this, restaurantInformation));
+        theRestaurantView.setAdapter(new CustomListAdapter2(this, restaurantItemInfo));
+
+        theRestaurantView.setOnItemClickListener(new OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                // ListItem newsData = (ListItem) listView.getItemAtPosition(position);
+                // Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItemInfo.get(position));
+
+                Intent intent = new Intent(SearchActivity.this, RestaurantInfoActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -261,11 +270,25 @@ public class SearchActivity extends AppCompatActivity
         {
             Log.i(TAG, businessList.get(i).name());
             Log.i(TAG, businessList.get(i).imageUrl());
+
             ListItem restaurantItemsList = new ListItem();
+
             restaurantItemsList.setName(businessList.get(i).name());
             restaurantItemsList.setImageURL(businessList.get(i).imageUrl());
-            // restaurantImagesUrl.add(businessList.get(i).imageUrl());
-            restaurantInformation.add(restaurantItemsList);
+            restaurantItemsList.setComment(businessList.get(i).snippetText());
+            restaurantItemsList.setLocation(businessList.get(i).location().displayAddress().get(0));
+            restaurantItemsList.setTags(businessList.get(i).categories());
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setPhoneNumber(businessList.get(i).displayPhone());
+
+            restaurantItemsList.setRatingURL(businessList.get(i).ratingImgUrlLarge());
+
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setReviewCount(businessList.get(i).reviewCount());
+
+
+
+            restaurantItemInfo.add(restaurantItemsList);
         }
     }
 }
