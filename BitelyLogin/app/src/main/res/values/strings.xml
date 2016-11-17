@@ -12,4 +12,5 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_creat_list">CreatListActivity</string>
     <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_create_lists">CreateListsActivity</string>
 </resources>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -14,7 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class BiteMeActivity extends HomeScreen
+public class BiteMeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -84,13 +85,13 @@ public class BiteMeActivity extends HomeScreen
         if (id == R.id.nav_home_screen)
         {
             // Handle the home screen action
-            Log.i(TAG,"I'm Here");
+            //Log.i(TAG,"I'm Here");
             Intent i = new Intent(this, HomeScreen.class);
             this.startActivity(i);
         } else if (id == R.id.nav_my_list)
         {
             // Handle the my list action
-            Log.i(TAG,"BiteMeActivity in myList");
+            //Log.i(TAG,"BiteMeActivity in myList");
             Intent i = new Intent(this, BiteMeActivity.class);
             this.startActivity(i);
         } else if (id == R.id.nav_trending)
@@ -105,7 +106,7 @@ public class BiteMeActivity extends HomeScreen
         } else if (id == R.id.nav_user_profile)
         {
             // Handle the nav user profile action
-            Log.i(TAG, "UserProfile");
+            //Log.i(TAG, "UserProfile");
             Intent i = new Intent(this, ProfileActivity.class);
             this.startActivity(i);
         }
