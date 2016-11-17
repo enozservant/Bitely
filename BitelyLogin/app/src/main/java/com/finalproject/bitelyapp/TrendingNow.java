@@ -1,10 +1,8 @@
 package com.finalproject.bitelyapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,15 +13,24 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ProfileActivity extends AppCompatActivity
+public class TrendingNow extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_trending_now);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -48,7 +55,7 @@ public class ProfileActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.profile, menu);
+        getMenuInflater().inflate(R.menu.trending_now, menu);
         return true;
     }
 
@@ -73,43 +80,18 @@ public class ProfileActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home_screen)
-        {
-            // Handle the home screen action
-//            Log.i(TAG,"I'm Here");
-            Intent i = new Intent(this, HomeScreen.class);
-            this.startActivity(i);
-        } else if (id == R.id.nav_my_list)
-        {
-            // Handle the my list action
-//            Log.i(TAG,"BiteMeActivity in myList");
-            Intent i = new Intent(this, MylistActivity.class);
-            this.startActivity(i);
-        } else if (id == R.id.nav_trending)
-        {
-            // Handle the trending action
-            Intent intent = new Intent(this, TrendingNow.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_my_friends)
-        {
-            // Handle the my my friends action
-            Intent i = new Intent(this, MyFriendActivity.class);
-            this.startActivity(i);
-        } else if (id == R.id.nav_browse_screen)
-        {
-            // Handle the my browse screen action
-            Intent i = new Intent(this, SearchActivity.class);
-            startActivity(i);
-        } else if (id == R.id.nav_user_profile)
-        {
-            // Handle the nav user profile action
-//            Log.i(TAG, "UserProfile");
-            Intent i = new Intent(this, ProfileActivity.class);
-            this.startActivity(i);
-        }
-        else if(id == R.id.nav_user_logout)
-        {
-            startActivity(new Intent(getApplicationContext(), LogoutActivity.class));
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_manage) {
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

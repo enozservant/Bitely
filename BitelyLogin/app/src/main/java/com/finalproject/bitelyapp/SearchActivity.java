@@ -241,6 +241,7 @@ public class SearchActivity extends AppCompatActivity
                     params.put("sort", "2");
 
                     Call<SearchResponse> call = yelpAPI.search("Los Angeles",  params);
+                    Log.i(TAG,"This place is broken after this");
                     SearchResponse response = call.execute().body();
 
                     ArrayList<Business> businesses = response.businesses();
