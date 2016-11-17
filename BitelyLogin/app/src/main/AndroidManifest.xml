@@ -78,7 +78,7 @@
             android:label="@string/title_activity_user_info"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-	    android:name=".IndividualListActivity"
+	        android:name=".IndividualListActivity"
             android:label="IndividualListActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
