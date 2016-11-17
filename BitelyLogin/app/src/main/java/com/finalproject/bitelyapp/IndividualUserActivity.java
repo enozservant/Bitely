@@ -8,11 +8,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -103,7 +105,7 @@ import java.util.ArrayList;
 public class IndividualUserActivity extends ListActivity{
     ArrayList<String> list;
     MyCustomAdapter adapter;
-
+    ImageView userPic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,5 +120,14 @@ public class IndividualUserActivity extends ListActivity{
         adapter = new MyCustomAdapter(list, this);
 
         setListAdapter(adapter);
+
+        //userPic Clickable
+        userPic = (ImageView) findViewById(R.id.user_pic);
+        userPic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("Hello");
+            }
+        });
     }
 }
