@@ -93,7 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                 // Start the Signup activity
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
-                finish();
+//                finish();
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), HomeScreenGuest.class);
                 startActivity(intent);
-                finish();
+//                finish();
             }
         });
     }
@@ -170,7 +170,7 @@ public class LoginActivity extends AppCompatActivity {
     public void loginSuccess()
     {
         _loginButton.setEnabled(true);
-        finish();
+//        finish();
         Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
         startActivity(intent);
     }

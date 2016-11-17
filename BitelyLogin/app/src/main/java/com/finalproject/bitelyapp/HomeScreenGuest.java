@@ -143,6 +143,11 @@ public class HomeScreenGuest extends AppCompatActivity
             // Handle the my browse screen action
             Intent i = new Intent( this, SearchActivity.class);
             this.startActivity(i);
+        } else if (id == R.id.nav_log_in)
+        {
+            // Handle the my browse screen action
+            Intent i = new Intent( this, LoginActivity.class);
+            this.startActivity(i);
         } else if(id == R.id.nav_create_account)
         {
             startActivity(new Intent(HomeScreenGuest.this, SignupActivity.class));
