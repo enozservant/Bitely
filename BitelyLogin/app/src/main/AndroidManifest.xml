@@ -3,8 +3,8 @@
     package="com.finalproject.bitelyapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -31,6 +31,9 @@
         <activity
             android:name=".HomeScreen"
             android:label="@string/title_activity_main_screen_logged"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyFriendActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HomeScreenGuest"
@@ -62,10 +65,6 @@
             android:name=".CreateListActivity"
             android:label="@string/title_activity_creat_list"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--<activity-->
-            <!--android:name=".MyFriendActivity"-->
-            <!--android:label="@string/title_activity_creat_list"-->
-            <!--android:theme="@style/AppTheme.NoActionBar" />-->
         <activity
             android:name=".SearchActivity"
             android:label="SearchActivity"
@@ -75,7 +74,11 @@
             android:label="MyListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".IndividualListActivity"
+            android:name=".UserInfoActivity"
+            android:label="@string/title_activity_user_info"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+	        android:name=".IndividualListActivity"
             android:label="IndividualListActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>

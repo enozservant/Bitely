@@ -11,23 +11,28 @@ import java.util.ArrayList;
 
 import static com.finalproject.bitelyapp.R.layout.my_list;
 
-class U{
-    String nume;
-    String prenume;
+class UserName{
 
-    U(String nume, String prenume){
-        this.nume=nume;
-        this.prenume=prenume;
+    String firstName;
+    String lastName;
+
+    UserName(String firstName, String lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public String toString(){
-        return prenume +" "+ nume;
+        return firstName +" "+ lastName;
     }
 }
 
-public class MyFriendActivity extends ListActivity {
-    ArrayList<U> lista;
-    ArrayAdapter<U> adaptor;
+public class MyFriendActivity extends ListActivity
+{
+    private final String USER_CHOSEN = "User Chosen";
+
+    private ArrayList<User> userList;
+    private ArrayAdapter<User> adapter;
 
     /**
      * Called when the activity is first created.
@@ -37,23 +42,38 @@ public class MyFriendActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(my_list);
 
-        lista = new ArrayList<U>();
+        userList = new ArrayList<User>();
 
-        adaptor = new ArrayAdapter<U>(this, R.layout.list_item, lista);
-        adaugaContact("Florian", "Iancu");
-        adaugaContact("he", "jjjja");
+        adapter = new ArrayAdapter<User>(this, R.layout.list_item, userList);
 
-        setListAdapter(adaptor);
+
+        // create dummy users
+        User userOne = new User();
+        userOne.setFirstName("Soren");
+        userOne.setLastName("Craig");
+
+        User userTwo = new User();
+        userTwo.setFirstName("Bob");
+        userTwo.setLastName("Dylan");
+
+        addAContact(userOne);
+        addAContact(userTwo);
+
+        setListAdapter(adapter);
     }
 
-    public void adaugaContact(String nume, String prenume) {
-        lista.add(new U(nume, prenume));
-        adaptor.notifyDataSetChanged();
+    public void addAContact(User user)
+    {
+        userList.add(user);
+        adapter.notifyDataSetChanged();
     }
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        Intent i = new Intent(this, MylistActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(this, UserInfoActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(USER_CHOSEN, userList.get(position));
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }
