@@ -30,8 +30,8 @@ class Contact{
 }
 
 public class MylistActivity extends ListActivity {
-    ArrayList<Contact> lista;
-    ArrayAdapter <Contact> adaptor;
+    ArrayList<String> lista;
+    ArrayAdapter <String> adaptor;
     private ImageButton addList;
 
     /** Called when the activity is first created. */
@@ -40,29 +40,22 @@ public class MylistActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_list);
 
-        lista = new ArrayList<Contact>();
-
-
-        adaptor = new ArrayAdapter<Contact>(this,R.layout.list_item, lista);
-        adaugaContact("Florian", "Iancu");
-        adaugaContact("Ioana", "Constantina");
-
-        setListAdapter(adaptor);
+        String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
+                "Blackberry" };
+        // use your custom layout
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                R.layout.list_item_gui, R.id.label, values);
+        setListAdapter(adapter);
         addList = (ImageButton) findViewById(R.id.addButton);
 
         addList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 System.out.print("RRR");
-                Intent i = new Intent(MylistActivity.this, CreateListActivity.class);
+                Intent i = new Intent(MylistActivity.this,CreateListActivity.class);
                 startActivity(i);
             }
         });
-    }
-
-    public void adaugaContact(String nume, String prenume) {
-        lista.add(new Contact(nume, prenume));
-        adaptor.notifyDataSetChanged();
     }
 
     protected void onListItemClick(ListView l, View v, int position, long id) {

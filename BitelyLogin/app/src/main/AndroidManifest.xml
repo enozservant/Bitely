@@ -78,11 +78,24 @@
         <activity
             android:name=".UserInfoActivity"
             android:label="@string/title_activity_user_info"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-	        android:name=".IndividualListActivity"
+            android:name=".IndividualListActivity"
             android:label="IndividualListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".IndividualListForOtherUsersActivity"
+            android:label="IndividualListForOtherUsersActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IndividualUserActivity"
+            android:label="IndividualUserActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".RestaurantInfoActivity_2"
+            android:label="RestaurantInfoActivity_2"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

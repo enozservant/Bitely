@@ -84,10 +84,12 @@ public class MyFriendActivity extends ListActivity
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        Intent intent = new Intent(this, UserInfoActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(USER_CHOSEN, userList.get(position));
-        intent.putExtras(bundle);
-        startActivity(intent);
+//        Intent intent = new Intent(this, UserInfoActivity.class);
+//        Bundle bundle = new Bundle();
+//        bundle.putSerializable(USER_CHOSEN, userList.get(position));
+//        intent.putExtras(bundle);
+//        startActivity(intent);
+        Intent i = new Intent(this, IndividualUserActivity.class);
+        startActivity(i);
     }
 }

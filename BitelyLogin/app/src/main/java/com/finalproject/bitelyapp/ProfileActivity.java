@@ -25,15 +25,6 @@ public class ProfileActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -85,28 +76,34 @@ public class ProfileActivity extends AppCompatActivity
         if (id == R.id.nav_home_screen)
         {
             // Handle the home screen action
-            //Log.i(TAG,"I'm Here");
+//            Log.i(TAG,"I'm Here");
             Intent i = new Intent(this, HomeScreen.class);
             this.startActivity(i);
         } else if (id == R.id.nav_my_list)
         {
             // Handle the my list action
-            //Log.i(TAG,"BiteMeActivity in myList");
-            Intent i = new Intent(this, BiteMeActivity.class);
+//            Log.i(TAG,"BiteMeActivity in myList");
+            Intent i = new Intent(this, MylistActivity.class);
             this.startActivity(i);
         } else if (id == R.id.nav_trending)
         {
             // Handle the trending action
+            Intent intent = new Intent(this, TrendingActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_my_friends)
         {
             // Handle the my my friends action
+            Intent i = new Intent(this, MyFriendActivity.class);
+            this.startActivity(i);
         } else if (id == R.id.nav_browse_screen)
         {
             // Handle the my browse screen action
+            Intent i = new Intent(this, SearchActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_user_profile)
         {
             // Handle the nav user profile action
-            //Log.i(TAG, "UserProfile");
+//            Log.i(TAG, "UserProfile");
             Intent i = new Intent(this, ProfileActivity.class);
             this.startActivity(i);
         }
