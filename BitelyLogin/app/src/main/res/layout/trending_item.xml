@@ -46,13 +46,14 @@
                     <TextView
                         android:id="@+id/title"
                         android:hint="Cafe 84"
-                        android:layout_width="215dp"
+                        android:layout_width="178dp"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
                         app:srcCompat="@drawable/border"
                         android:id="@+id/restaurant_rating"
                         android:layout_weight="1" />
@@ -61,12 +62,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/restaurant_location" />
+                    android:id="@+id/restaurant_location"
+                    android:layout_marginLeft="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/text_tags" />
+                    android:id="@+id/text_tags"
+                    android:layout_marginLeft="10dp" />
             </LinearLayout>
 
         </LinearLayout>

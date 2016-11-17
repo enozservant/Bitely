@@ -124,13 +124,12 @@ public class HomeScreenGuest extends AppCompatActivity
         if (id == R.id.nav_home_screen)
         {
             // Handle the home screen action
-            Log.i(TAG,"I'm Here");
             Intent i = new Intent(this, HomeScreenGuest.class);
             this.startActivity(i);
         } else if (id == R.id.nav_my_list)
         {
             // Handle the my list action
-            Log.i(TAG,"BiteMeActivity in myList");
+
             Intent i = new Intent(this, BiteMeActivity.class);
             this.startActivity(i);
         } else if (id == R.id.nav_trending)

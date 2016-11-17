@@ -28,12 +28,36 @@ import java.util.Map;
 
 import retrofit2.Call;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+
 public class HomeScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private Button Biteme;
+
     public static final String TAG = "HomeScreen";
     public static final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     ArrayList<ListItem> restaurantItemInfo;
+
+    // a reference to the firebase database
+    private FirebaseAuth mFirebaseAuth;
+    // a reference to the database
+    private FirebaseDatabase mFirebaseDatabase;
+    // a firebase auth listener
+    private FirebaseAuth.AuthStateListener mAuthListener;
+    private FirebaseDatabase mDatabaseRef;
+    private FirebaseUser currentUser;
+    private DatabaseReference mDatabase;
+
+    private String firstName;
+    private String lastName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +66,62 @@ public class HomeScreen extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        firstName = "";
+        lastName = "";
+
+        mDatabaseRef = FirebaseDatabase.getInstance();
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        currentUser = mFirebaseAuth.getCurrentUser();
+
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String currUID = currentUser.getUid();
+                for(DataSnapshot d : dataSnapshot.getChildren())
+                {
+                    boolean correctUser = false;
+                    System.out.println("Above: " + d.getKey());
+                    if(d.getKey().equals(currUID))
+                    {
+                        correctUser = true;
+                    }
+                    else
+                    {
+                        correctUser = false;
+                    }
+                    HashMap<String,String> user_map= (HashMap<String,String>)d.getValue();
+                    for (HashMap.Entry<String, String> innerEntry : user_map.entrySet()) {
+                        String key = innerEntry.getKey();
+                        Object value = innerEntry.getValue();
+
+                        if(key.equals("firstName") && correctUser)
+                        {
+                            System.out.println("IN FIRST NAME");
+                            firstName = (String)value;
+                            setUserName();
+                        }
+                        if(key.equals("lastName") && correctUser)
+                        {
+                            System.out.println("IN FIRST NAME");
+                            lastName = (String)value;
+                            setUserName();
+
+                        }
+                        System.out.println("innerkey: " + key + "// innervalue: " + value);
+                        // System.out.println("Children" + user);
+                        // System.out.println("Value" + (String)d.getValue());
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
         restaurantItemInfo = new ArrayList<>();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -50,6 +130,7 @@ public class HomeScreen extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        // NavigationView navigationView = (NavigationView) findViewById(nav_view);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -172,6 +253,7 @@ public class HomeScreen extends AppCompatActivity
         return true;
     }
 
+
     private void callYelp(){
         Runnable r = new Runnable(){
             @Override
@@ -238,6 +320,14 @@ public class HomeScreen extends AppCompatActivity
 
 
             restaurantItemInfo.add(restaurantItemsList);
+        }
+    }
+
+    private void setUserName()
+    {
+        if(!firstName.equals("") && !lastName.equals(""))
+        {
+            // set some text!
         }
     }
 }
