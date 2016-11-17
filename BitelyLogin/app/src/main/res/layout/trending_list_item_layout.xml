@@ -15,15 +15,6 @@
         android:background="@drawable/ic_money" />
 
     <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/thumbImage"
-        android:minLines="2"
-        android:paddingTop="5dp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/reporter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,5 +28,16 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/reporter"
         android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
