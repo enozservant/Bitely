@@ -37,24 +37,32 @@ public class CustomListAdapter2 extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
+        CustomListAdapter.ViewHolder holder;
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.trending_list_item_layout, null);
-            holder = new ViewHolder();
-            holder.headlineView = (TextView) convertView.findViewById(R.id.title);
-            holder.reporterNameView = (TextView) convertView.findViewById(R.id.reporter);
-            holder.reportedDateView = (TextView) convertView.findViewById(R.id.date);
+            // convertView = layoutInflater.inflate(R.layout.trending_list_item_layout, null);
+            convertView = layoutInflater.inflate(R.layout.trending_item, null);
+            holder = new CustomListAdapter.ViewHolder();
+            holder.nameView = (TextView) convertView.findViewById(R.id.title);
+//            holder.commentView = (TextView) convertView.findViewById(R.id.restaurant_comment);
+            holder.locationView = (TextView) convertView.findViewById(R.id.restaurant_location);
             holder.imageView = (ImageView) convertView.findViewById(R.id.thumbImage);
+            holder.starsView = (ImageView) convertView.findViewById(R.id.restaurant_rating);
             convertView.setTag(holder);
         } else {
-            holder = (ViewHolder) convertView.getTag();
+            holder = (CustomListAdapter.ViewHolder) convertView.getTag();
+        }
+
+        ListItem newsItem = (ListItem) listData.get(position);
+        holder.nameView.setText(newsItem.getName());
+//        holder.commentView.setText(newsItem.getComment());
+        holder.locationView.setText(newsItem.getLocation());
+        // holder.starsView.setImageBitmap(newsItem.getStarsBitmap());
+        if(holder.starsView != null)
+        {
+            new ImageDownloaderTask(holder.starsView).execute(newsItem.getRatingURL());
         }
 
 
-        ListItem newsItem = (ListItem) listData.get(position);
-        holder.headlineView.setText(newsItem.getName());
-        // holder.reporterNameView.setText("By, " + newsItem.getReporterName());
-        // holder.reportedDateView.setText(newsItem.getDate());
 
         if (holder.imageView != null) {
             new ImageDownloaderTask(holder.imageView).execute(newsItem.getImageURL());
@@ -64,9 +72,11 @@ public class CustomListAdapter2 extends BaseAdapter {
     }
 
     static class ViewHolder {
-        TextView headlineView;
-        TextView reporterNameView;
-        TextView reportedDateView;
+        TextView nameView;
         ImageView imageView;
+        TextView commentView;
+        ImageView starsView;
+        TextView locationView;
+        TextView tagsView;
     }
 }
