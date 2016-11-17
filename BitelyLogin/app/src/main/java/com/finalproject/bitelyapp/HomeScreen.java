@@ -99,13 +99,13 @@ public class HomeScreen extends AppCompatActivity
         if (id == R.id.nav_home_screen)
         {
             // Handle the home screen action
-            Log.i(TAG,"I'm Here");
+//            Log.i(TAG,"I'm Here");
             Intent i = new Intent(this, HomeScreen.class);
             this.startActivity(i);
         } else if (id == R.id.nav_my_list)
         {
             // Handle the my list action
-            Log.i(TAG,"BiteMeActivity in myList");
+//            Log.i(TAG,"BiteMeActivity in myList");
             Intent i = new Intent(this, MylistActivity.class);
             this.startActivity(i);
         } else if (id == R.id.nav_trending)
@@ -126,7 +126,7 @@ public class HomeScreen extends AppCompatActivity
         } else if (id == R.id.nav_user_profile)
         {
             // Handle the nav user profile action
-            Log.i(TAG, "UserProfile");
+//            Log.i(TAG, "UserProfile");
             Intent i = new Intent(this, ProfileActivity.class);
             this.startActivity(i);
         }
