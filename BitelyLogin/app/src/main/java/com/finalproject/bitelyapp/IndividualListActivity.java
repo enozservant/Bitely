@@ -8,8 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-
 class Restaurants{
     String restaurantName;
 
@@ -72,6 +70,11 @@ public class IndividualListActivity extends ListActivity{
     protected void onListItemClick(ListView l, View v, int position, long id) {
         Intent i = new Intent(this, RestaurantInfoActivity_2.class);
         startActivity(i);
+    }
+
+    private void getFirebaseLists()
+    {
+
     }
 }
 
