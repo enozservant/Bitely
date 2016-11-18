@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="google"
-                android:id="@+id/googlebutton"
+                android:id="@+id/google_button"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
                 android:layout_weight="0.46" />
@@ -143,7 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="yelp"
-                android:id="@+id/yelpbutton"
+                android:id="@+id/yelp_button"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
                 android:layout_weight="0.47" />
