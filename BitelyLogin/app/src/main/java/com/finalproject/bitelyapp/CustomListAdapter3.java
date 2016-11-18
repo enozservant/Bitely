@@ -1,6 +1,7 @@
 package com.finalproject.bitelyapp;
 
 import android.content.Context;
+import android.database.DataSetObserver;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,16 +13,27 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Enoz on 11/16/2016.
+ * Created by Enoz on 11/17/2016.
  */
 
-public class CustomListAdapter2 extends BaseAdapter {
+public class CustomListAdapter3 extends BaseAdapter {
+
     private ArrayList listData;
     private LayoutInflater layoutInflater;
 
-    public CustomListAdapter2(Context context, ArrayList listData) {
+    public CustomListAdapter3(Context context, ArrayList listData) {
         this.listData = listData;
         layoutInflater = LayoutInflater.from(context);
+    }
+
+    @Override
+    public void registerDataSetObserver(DataSetObserver dataSetObserver) {
+
+    }
+
+    @Override
+    public void unregisterDataSetObserver(DataSetObserver dataSetObserver) {
+
     }
 
     public int getCount() {
@@ -36,6 +48,11 @@ public class CustomListAdapter2 extends BaseAdapter {
         return position;
     }
 
+    @Override
+    public boolean hasStableIds() {
+        return false;
+    }
+
     public View getView(int position, View convertView, ViewGroup parent) {
         CustomListAdapter.ViewHolder holder;
         if (convertView == null) {
@@ -43,7 +60,7 @@ public class CustomListAdapter2 extends BaseAdapter {
             convertView = layoutInflater.inflate(R.layout.trending_item, null);
             holder = new CustomListAdapter.ViewHolder();
             holder.nameView = (TextView) convertView.findViewById(R.id.title);
-            holder.commentView = (TextView) convertView.findViewById(R.id.restaurant_comment);
+//            holder.commentView = (TextView) convertView.findViewById(R.id.restaurant_comment);
             holder.locationView = (TextView) convertView.findViewById(R.id.restaurant_location);
             holder.imageView = (ImageView) convertView.findViewById(R.id.thumbImage);
             holder.starsView = (ImageView) convertView.findViewById(R.id.restaurant_rating);
@@ -54,7 +71,7 @@ public class CustomListAdapter2 extends BaseAdapter {
 
         ListItem newsItem = (ListItem) listData.get(position);
         holder.nameView.setText(newsItem.getName());
-        holder.commentView.setText(newsItem.getComment());
+//        holder.commentView.setText(newsItem.getComment());
         holder.locationView.setText(newsItem.getLocation());
         // holder.starsView.setImageBitmap(newsItem.getStarsBitmap());
         if(holder.starsView != null)
@@ -74,7 +91,7 @@ public class CustomListAdapter2 extends BaseAdapter {
     static class ViewHolder {
         TextView nameView;
         ImageView imageView;
-//        TextView commentView;
+        //        TextView commentView;
         ImageView starsView;
         TextView locationView;
         TextView tagsView;

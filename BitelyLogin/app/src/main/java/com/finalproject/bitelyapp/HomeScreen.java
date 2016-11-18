@@ -157,7 +157,7 @@ public class HomeScreen extends AppCompatActivity
     private void initializeListView()
     {
         final ListView theRestaurantView = (ListView) findViewById(R.id.discoverList);
-        theRestaurantView.setAdapter(new CustomListAdapter2(this, restaurantItemInfo));
+        theRestaurantView.setAdapter(new CustomListAdapter3(this, restaurantItemInfo));
 
         theRestaurantView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 

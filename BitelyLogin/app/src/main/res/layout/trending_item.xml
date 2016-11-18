@@ -48,7 +48,7 @@
                         android:hint="Cafe 84"
                         android:layout_width="178dp"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textColor="@color/white"
                         android:layout_marginLeft="10dp" />
 
