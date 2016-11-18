@@ -50,10 +50,10 @@
                 android:layout_marginBottom="20dp"/>
 
             <Button
-                android:text="Alright Going!"
+                android:text="More Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/alrightGoing"
+                android:id="@+id/more_info_button"
                 android:textAlignment="center"
                 android:layout_marginBottom="20dp"
                 android:textStyle="normal|bold"
