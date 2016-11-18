@@ -107,6 +107,7 @@ public class MyFriendActivity extends ListActivity
         Bundle bundle = new Bundle();
         bundle.putSerializable(USER_CHOSEN, userList.get(position));
         intent.putExtras(bundle);
+        intent.putExtra("position", position);
         startActivity(intent);
         // Intent i = new Intent(this, IndividualUserActivity.class);
         // startActivity(i);

@@ -21,12 +21,13 @@ import java.util.ArrayList;
 class MyCustomAdapter extends BaseAdapter implements ListAdapter {
     private ArrayList<String> list = new ArrayList<String>();
     private Context context;
+    private int p;
 
 
-
-    public MyCustomAdapter(ArrayList<String> list, Context context) {
+    public MyCustomAdapter(ArrayList<String> list, Context context, int p) {
         this.list = list;
         this.context = context;
+        this.p=p;
     }
 
     @Override
@@ -62,8 +63,11 @@ class MyCustomAdapter extends BaseAdapter implements ListAdapter {
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //do something
+                    FriendandTheirList fat = new FriendandTheirList();
+                    individualUser iu= fat.individualUsers.get(p);
+                    String searchkey=iu.listnameatindex(position);
                     Intent i = new Intent(v.getContext(), IndividualListForOtherUsersActivity.class);
+                    i.putExtra("search", searchkey);
                     v.getContext().startActivity(i);
                     notifyDataSetChanged();
                 }
@@ -105,6 +109,8 @@ public class IndividualUserActivity extends ListActivity{
     private ImageView userPic;
     private final String USER_CHOSEN = "User Chosen";
     private User userChosen;
+    private FriendandTheirList fat;
+    private individualUser iu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +119,7 @@ public class IndividualUserActivity extends ListActivity{
         // get the restaurant item
         Intent intent = this.getIntent();
         Bundle bundle = intent.getExtras();
+        int position = bundle.getInt("position");
         userChosen = (User) bundle.getSerializable(USER_CHOSEN);
 
         userPic = (ImageView) findViewById(R.id.user_pic);
@@ -123,11 +130,15 @@ public class IndividualUserActivity extends ListActivity{
 
         //generate list
         list = new ArrayList<String>();
-        list.add("List 1");
-        list.add("List 2");
+        fat = new FriendandTheirList();
+        iu= fat.individualUsers.get(position);
+        for(int i=0; i<iu.getHowmanylists();i++){
+            System.out.println(iu.listnameatindex(i));
+            list.add(iu.listnameatindex(i));
+        }
 
         //instantiate custom adapter
-        adapter = new MyCustomAdapter(list, this);
+        adapter = new MyCustomAdapter(list, this,position);
 
         setListAdapter(adapter);
 
