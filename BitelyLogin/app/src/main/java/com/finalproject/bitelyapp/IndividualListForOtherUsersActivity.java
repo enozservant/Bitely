@@ -56,7 +56,7 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
 
 
 
-        
+
 
         myRestaurants = new ArrayList<>();
         callYelp("Los Angeles", category);
