@@ -88,13 +88,13 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
                     case 0:
                         addList.setText("Unfollow List");
                         Toast.makeText(getBaseContext(), "Followed", Toast.LENGTH_LONG).show();
-                        numberFollows--;
+                        numberFollows++;
                         numFollowedView.setText(numberFollows + " follows");
                         view.setTag(1); //pause
                         break;
                     case 1:
                         addList.setText("Follow List");
-                        numberFollows++;
+                        numberFollows--;
                         numFollowedView.setText(numberFollows + " follows");
                         Toast.makeText(getBaseContext(), "Unfollowed", Toast.LENGTH_LONG).show();
                         view.setTag(0); //pause

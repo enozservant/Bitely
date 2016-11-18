@@ -13,6 +13,7 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:background="@color/primary">
+        <include layout="@layout/tool_bar_user_profile"/>
 
         <ImageView
             android:id="@+id/profile_pic"
@@ -20,18 +21,8 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"/>
-
-        <TextView
-            android:text="User Info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/change_profile_pic_link"
-            android:gravity="center"
-            android:layout_marginBottom="20dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"/>
 
         <!--userName-->
         <LinearLayout

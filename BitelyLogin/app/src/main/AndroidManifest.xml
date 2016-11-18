@@ -42,6 +42,10 @@
             android:label="Bitely Guest"
             android:theme="@style/AppTheme.Dark" />
         <activity
+            android:name=".RestaurantInfoGuestActivity"
+            android:label="Bitely Guest Restaurant"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
             android:name=".BiteMeActivity"
             android:label="Bite Me"
             android:theme="@style/AppTheme.Dark">

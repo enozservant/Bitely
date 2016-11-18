@@ -16,11 +16,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@color/primary">
-            <include layout="@layout/tool_bar_click_on_an_user"/>
+            <include layout="@layout/tool_bar_friend_page"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
                 android:background="@color/primary">
 
                 <ImageView

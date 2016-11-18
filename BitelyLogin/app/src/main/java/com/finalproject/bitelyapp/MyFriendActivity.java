@@ -41,7 +41,7 @@ public class MyFriendActivity extends ListActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(my_list);
+        setContentView(R.layout.my_friend);
 
         userList = new ArrayList<User>();
 
@@ -86,13 +86,13 @@ public class MyFriendActivity extends ListActivity
         setListAdapter(adapter);
 
         add_Friend = (ImageButton) findViewById(R.id.add_friend_button);
-//        add_Friend.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(v.getContext(), SearchActivity.class);
-//                v.getContext().startActivity(i);
-//            }
-//        });
+        add_Friend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), SearchActivity.class);
+                v.getContext().startActivity(i);
+            }
+        });
     }
 
     public void addAContact(User user)

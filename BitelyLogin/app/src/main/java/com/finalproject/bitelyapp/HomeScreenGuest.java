@@ -84,7 +84,7 @@ public class HomeScreenGuest extends AppCompatActivity
                 Bundle bundle = new Bundle();
                 bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItemInfo.get(position));
 
-                Intent intent = new Intent(HomeScreenGuest.this, RestaurantInfoActivity.class);
+                Intent intent = new Intent(HomeScreenGuest.this, RestaurantInfoGuestActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }

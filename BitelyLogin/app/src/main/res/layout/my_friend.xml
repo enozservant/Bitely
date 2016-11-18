@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:weightSum="1"
         android:layout_centerHorizontal="true">
-        <include layout="@layout/tool_bar_click_on_an_user"/>
+        <include layout="@layout/tool_bar_my_friends"/>
 
         <View
             android:layout_width="match_parent"

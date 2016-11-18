@@ -54,7 +54,7 @@ public class UserInfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(getBaseContext(), "Added Friend!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "This user is your friend! Pick another one!", Toast.LENGTH_LONG).show();
             }
         });
 
