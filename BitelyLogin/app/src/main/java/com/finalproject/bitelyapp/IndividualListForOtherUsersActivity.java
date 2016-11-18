@@ -8,36 +8,30 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class IndividualListForOtherUsersActivity extends ListActivity{
 //    ArrayList<Restaurants> myRestaurants;
 //    ArrayAdapter<Restaurants> mAdapter;
     ArrayAdapter<String> mAdapter;
     private Button addList;
+    private TextView numFollowedView;
+    private int numberFollows = 4;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_when_press_a_list_from_other_user);
 
+        numFollowedView = (TextView) findViewById(R.id.num_ppl_follow_list);
+        numFollowedView.setText(numberFollows + " follows");
+
         //myRestaurants = new ArrayList<Restaurants>();
 
         String[] values = new String[] { "Panda Express", "California Pizza Kitchen", "Seeds",
                 "In-n-out", "Coffee Bean", "Lemonade", "KFC"};
         mAdapter = new ArrayAdapter<String>(this, R.layout.list_item_gui, R.id.label, values);
-
-//        AddRestaurant("Panda Express");
-//        AddRestaurant("California Pizza Kitchen");
-//        AddRestaurant("Seeds");
-//        AddRestaurant("In-n-out");
-//        AddRestaurant("Coffee Bean");
-//        AddRestaurant("Lemonade");
-//        AddRestaurant("KFC");
-//        AddRestaurant("Triple 8");
-//        AddRestaurant("StarBucks");
 
         setListAdapter(mAdapter);
 
@@ -53,10 +47,14 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
                     case 0:
                         addList.setText("Unfollow List");
                         Toast.makeText(getBaseContext(), "Followed", Toast.LENGTH_LONG).show();
+                        numberFollows--;
+                        numFollowedView.setText(numberFollows + " follows");
                         view.setTag(1); //pause
                         break;
                     case 1:
                         addList.setText("Follow List");
+                        numberFollows++;
+                        numFollowedView.setText(numberFollows + " follows");
                         Toast.makeText(getBaseContext(), "Unfollowed", Toast.LENGTH_LONG).show();
                         view.setTag(0); //pause
                         break;
