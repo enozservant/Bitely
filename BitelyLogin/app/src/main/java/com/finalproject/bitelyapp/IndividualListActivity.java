@@ -36,6 +36,7 @@ class Restaurants{
 public class IndividualListActivity extends ListActivity{
     ArrayList<ListItem> myRestaurants;
     public static final String TAG = "IndividualListActivity";
+    private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     private Button addRestaurant;
     private String category;
     private TextView ListName;
@@ -89,8 +90,12 @@ public class IndividualListActivity extends ListActivity{
 //    }
 
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        Intent i = new Intent(this, RestaurantInfoActivity_2.class);
-        startActivity(i);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(RESTAURANT_CHOSEN, myRestaurants.get(position));
+
+        Intent intent = new Intent(IndividualListActivity.this, RestaurantInfoActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
     private void initializeListView()
     {
@@ -153,6 +158,14 @@ public class IndividualListActivity extends ListActivity{
             restaurantItemsList.setLocation(businessList.get(i).location().displayAddress().get(0));
             restaurantItemsList.setTags(businessList.get(i).categories());
             restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setPhoneNumber(businessList.get(i).displayPhone());
+
+            restaurantItemsList.setRatingURL(businessList.get(i).ratingImgUrlLarge());
+
+            restaurantItemsList.setRating(businessList.get(i).rating());
+            restaurantItemsList.setReviewCount(businessList.get(i).reviewCount());
+            restaurantItemsList.setBusinessURL(businessList.get(i).url());
+
 
 
             myRestaurants.add(restaurantItemsList);
