@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/mint_green">
+    android:background="@color/primary">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,8 +19,8 @@
             <EditText
                 android:layout_width="177dp"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Input List Name"
+                android:inputType="text"
+                android:hint="Input List Name"
                 android:layout_gravity="center"
                 android:ems="10"
                 android:id="@+id/new_list_name"
@@ -34,24 +34,42 @@
                 android:layout_gravity="center"
                 android:id="@+id/new_list_pic"
                 android:layout_marginBottom="40dp"
-                android:layout_weight="0.18" />
+                android:layout_weight="1" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_circle_2"
-                android:layout_gravity="center"
-                android:background="@color/mint_green"
-                android:id="@+id/add_restuarant_button" />
+                android:paddingLeft="100dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/add_button"
+                    android:layout_gravity="center"
+                    android:background="@color/primary"
+                    android:id="@+id/add_restuarant_button"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Restaurant"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+
+
 
             <Button
                 android:text="Create List"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="230dp"
-                android:textColor="@color/avocado_black"
-                android:background="@color/tiffany_blue"
+                android:layout_marginTop="270dp"
+                android:textColor="@color/black"
                 android:id="@+id/create_list_button"
                 android:layout_weight="1.83" />
         </LinearLayout>

@@ -66,13 +66,15 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Login"/>
+            android:text="Login"
+            android:textColor="@color/black"/>
 
         <TextView android:id="@+id/link_signup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:text="No account yet? Create one"
+            android:textColor="@color/white"
             android:gravity="center"
             android:textSize="16dip"/>
 
@@ -81,6 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:text="Continue as guest"
+            android:textColor="@color/white"
             android:gravity="center"
             android:textSize="16dip"/>
 

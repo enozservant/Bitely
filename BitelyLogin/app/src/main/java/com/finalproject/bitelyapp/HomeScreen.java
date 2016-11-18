@@ -1,6 +1,7 @@
 package com.finalproject.bitelyapp;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.yelp.clientlib.connection.YelpAPI;
@@ -40,7 +43,8 @@ import java.util.HashMap;
 
 public class HomeScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    private Button Biteme;
+    //private Button Biteme;
+    private ImageButton Biteme;
 
     public static final String TAG = "HomeScreen";
     public static final String RESTAURANT_CHOSEN = "Restaurant Chosen";
@@ -137,7 +141,7 @@ public class HomeScreen extends AppCompatActivity
         callYelp();
         initializeListView();
 
-        Biteme = (Button) findViewById(R.id.biteMe);
+        Biteme = (ImageButton) findViewById(R.id.biteMe);
 
         Biteme.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -196,9 +200,9 @@ public class HomeScreen extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -240,7 +244,7 @@ public class HomeScreen extends AppCompatActivity
         {
             // Handle the nav user profile action
 //            Log.i(TAG, "UserProfile");
-            Intent i = new Intent(this, ProfileActivity.class);
+            Intent i = new Intent(this, UserProfileActivity.class);
             this.startActivity(i);
         }
         else if(id == R.id.nav_user_logout)

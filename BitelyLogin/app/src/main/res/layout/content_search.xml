@@ -22,10 +22,11 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_search_category_default"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/search_icon"
                 android:id="@+id/imageButton"
+                android:background="@color/primary"
                 android:layout_alignParentTop="true" />
 
             <EditText
@@ -33,11 +34,12 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="Search"
+                android:textColor="@color/black"
                 android:ems="10"
                 android:id="@+id/editText2"
                 android:editable="true"
                 android:layout_alignParentTop="true"
-                android:background="@drawable/edittextstyle"
+                android:background="@color/white"
                 android:height="25dp"
                 android:layout_alignBottom="@+id/imageButton"
                 android:layout_alignParentRight="true"

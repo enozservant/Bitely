@@ -5,68 +5,78 @@
     android:id="@+id/content_bite_me"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.finalproject.bitelyapp.BiteMeActivity"
     tools:showIn="@layout/app_bar_bite_me">
 
-        <LinearLayout
-            android:orientation="vertical"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="The Place to Grab a Bite Today is: "
+            android:ems="10"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Title of the Restaurant"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/rname"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:textSize="24sp" />
+
+        <ImageView android:src="@drawable/ic_technology_1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:weightSum="1">
+            android:layout_height="155dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/biteMeRestaurantPic"
+            android:layout_weight="0.24"
+            android:layout_marginBottom="20dp"/>
 
-            <EditText
-                android:layout_width="283dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="The Place to Grab a Bite Today is: "
-                android:ems="10"
-                android:focusable="false"
-                android:textAlignment="center"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.15" />
+        <Button
+            android:text="More Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/more_info_button"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
 
-            <TextView
-                android:layout_width="179dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Title of the Restaurant"
-                android:ems="10"
-                android:paddingBottom="20dp"
-                android:textAlignment="center"
-                android:focusable="false"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/rname"
-                android:textSize="24sp" />
-
-            <ImageView android:src="@drawable/ic_technology_1"
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/biteMeRestaurantPic"
-                android:layout_weight="0.24"
-                android:layout_marginBottom="20dp"/>
-
-            <Button
-                android:text="More Info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/more_info_button"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
-                android:textStyle="normal|bold"
-                android:layout_gravity="center_horizontal"
-                android:textSize="30sp"
-                android:onClick = "" />
-
-            <Button
-                android:text="Bite Me Again!"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/biteMeAgain"
-                android:textAlignment="center"
-                android:layout_gravity="center_horizontal"/>
-        </LinearLayout>
+        <Button
+            android:text="Bite Me Again!"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/biteMeAgain"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
 </RelativeLayout>
