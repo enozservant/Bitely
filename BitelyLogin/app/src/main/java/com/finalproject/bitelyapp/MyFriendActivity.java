@@ -89,7 +89,8 @@ public class MyFriendActivity extends ListActivity
 //        add_Friend.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//
+//                Intent i = new Intent(v.getContext(), SearchActivity.class);
+//                v.getContext().startActivity(i);
 //            }
 //        });
     }

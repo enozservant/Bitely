@@ -22,7 +22,8 @@
             android:id="@+id/trending_text_view"
             android:gravity="center"
             android:textSize="45sp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -35,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/location_label"
                 android:paddingLeft="20dp"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <EditText
