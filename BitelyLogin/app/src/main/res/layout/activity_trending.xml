@@ -10,16 +10,52 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <include layout="@layout/tool_bar_trending"/>
-        <!--<TextView-->
-            <!--android:text="Trending Now"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/trending_text_view"-->
-            <!--android:gravity="center"-->
-            <!--android:textSize="30dp"-->
-            <!--android:paddingBottom="10dp" />-->
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Trending Now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trending_text_view"
+            android:gravity="center"
+            android:textSize="45sp"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Enter Your City"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_label"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Los Angeles"
+                android:ems="10"
+                android:id="@+id/city_textfield"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <Button
+                android:text="GO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/search_button"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/trending_list"
