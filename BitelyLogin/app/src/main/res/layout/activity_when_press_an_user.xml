@@ -5,22 +5,23 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#fff">
+    android:background="@color/primary">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/primary">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#fff">
+            android:background="@color/primary">
             <include layout="@layout/tool_bar_click_on_an_user"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="#fff">
+                android:background="@color/primary">
 
                 <ImageView
                     android:id="@+id/user_pic"
@@ -40,9 +41,11 @@
                         android:id="@+id/num_rest_contain"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginBottom="10dp"
                         android:textSize="20dp"
+                        android:textColor="@color/white"
                         android:text="10 Lists" />
 
                 </LinearLayout>

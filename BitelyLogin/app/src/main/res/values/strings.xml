@@ -8,9 +8,10 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="title_activity_bite_me">BiteMeActivity</string>
+    <string name="title_activity_bite_me">Bite Me</string>
+    <string name="title_activity_create_list">Create Your Bite List</string>
+    <string name="title_activity_when_press_a_list">List</string>
+
     <string name="title_activity_profile">Profile</string>
-    <string name="title_activity_creat_list">CreatListActivity</string>
     <string name="title_activity_user_info">UserInfoActivity</string>
-    <string name="title_activity_create_lists">CreateListsActivity</string>
 </resources>

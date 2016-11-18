@@ -23,8 +23,10 @@ class Restaurants{
 }
 
 public class IndividualListActivity extends ListActivity{
-    ArrayList<Restaurants> myRestaurants;
-    ArrayAdapter<Restaurants> mAdapter;
+//    ArrayList<Restaurants> myRestaurants;
+//    ArrayAdapter<Restaurants> mAdapter;
+    //ArrayList<String> myRestaurants;
+    ArrayAdapter<String> mAdapter;
     private Button addRestaurant;
 
     @Override
@@ -32,19 +34,22 @@ public class IndividualListActivity extends ListActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_when_press_a_list);
 
-        myRestaurants = new ArrayList<Restaurants>();
+//        myRestaurants = new ArrayList<Restaurants>();
+        //myRestaurants = new ArrayList<String>();
 
-        mAdapter = new ArrayAdapter<Restaurants>(this, R.layout.list_item, myRestaurants);
+        String[] values = new String[] { "Panda Express", "California Pizza Kitchen", "Seeds",
+                "In-n-out", "Coffee Bean", "Lemonade", "KFC"};
+        mAdapter = new ArrayAdapter<String>(this, R.layout.list_item_gui, R.id.label, values);
 
-        AddRestaurant("Panda Express");
-        AddRestaurant("California Pizza Kitchen");
-        AddRestaurant("Seeds");
-        AddRestaurant("In-n-out");
-        AddRestaurant("Coffee Bean");
-        AddRestaurant("Lemonade");
-        AddRestaurant("KFC");
-        AddRestaurant("Triple 8");
-        AddRestaurant("StarBucks");
+//        AddRestaurant("Panda Express");
+//        AddRestaurant("California Pizza Kitchen");
+//        AddRestaurant("Seeds");
+//        AddRestaurant("In-n-out");
+//        AddRestaurant("Coffee Bean");
+//        AddRestaurant("Lemonade");
+//        AddRestaurant("KFC");
+//        AddRestaurant("Triple 8");
+//        AddRestaurant("StarBucks");
 
         setListAdapter(mAdapter);
 
@@ -59,10 +64,10 @@ public class IndividualListActivity extends ListActivity{
     }
 
 
-    public void AddRestaurant(String name) {
-        myRestaurants.add(new Restaurants(name));
-        mAdapter.notifyDataSetChanged();
-    }
+//    public void AddRestaurant(String name) {
+//        myRestaurants.add(new Restaurants(name));
+//        mAdapter.notifyDataSetChanged();
+//    }
 
     protected void onListItemClick(ListView l, View v, int position, long id) {
         Intent i = new Intent(this, RestaurantInfoActivity_2.class);

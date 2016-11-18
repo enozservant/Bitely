@@ -22,7 +22,6 @@
             android:layout_weight="0.77"
             android:weightSum="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/restaurant_info_name"
                 android:layout_width="wrap_content"
@@ -30,6 +29,8 @@
                 android:text="Restaurant"
                 android:paddingLeft="10dp"
                 android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
                 android:paddingBottom="4dp" />
 
             <ImageView
@@ -53,8 +54,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 app:srcCompat="@drawable/ic_location"
                 android:id="@+id/imageView3"
                 android:paddingLeft="10dp"/>
@@ -63,6 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/restaurant_info_address"
+                android:textColor="@color/white"
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 android:paddingBottom="4dp" />
@@ -80,18 +82,19 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_shapes"
-                android:id="@+id/imageView4"
-                android:paddingLeft="10dp"/>
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                app:srcCompat="@drawable/ic_tag"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/imageView4"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/restaurant_info_type"
-                android:paddingLeft="10dp"
+                android:textColor="@color/white"
                 android:textSize="18sp"
+                android:layout_marginTop="4dp"
                 android:paddingBottom="4dp" />
         </LinearLayout>
 
@@ -105,10 +108,11 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_people_3"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                app:srcCompat="@drawable/ic_profile"
                 android:id="@+id/imageView5"
+                android:layout_marginLeft="4dp"
                 android:paddingLeft="10dp"/>
 
             <TextView
@@ -116,6 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:paddingBottom="4dp" />
         </LinearLayout>
@@ -133,7 +138,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="google"
+                android:text="Google"
+                android:textColor="@color/black"
                 android:id="@+id/googlebutton"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
@@ -142,7 +148,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yelp"
+                android:text="Yelp"
+                android:textColor="@color/black"
                 android:id="@+id/yelpbutton"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
@@ -155,6 +162,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add to my List"
+            android:textColor="@color/black"
             android:id="@+id/rentButton"
             android:layout_gravity="center_horizontal"
             android:layout_alignParentLeft="true"

@@ -5,16 +5,18 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/mint_green">
+    android:background="@color/primary">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
-        android:background="@color/mint_green">
+        android:background="@color/primary">
 
-        <ImageView android:src="@drawable/ic_profile"
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:src="@drawable/ic_profile"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
@@ -24,11 +26,11 @@
             android:text="Change Pic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
+            android:id="@+id/change_profile_pic_link"
             android:gravity="center"
             android:layout_marginBottom="20dp"
             android:textAlignment="center"
-            android:textColor="@color/avocado_black"
+            android:textColor="@color/white"
             android:textSize="18dp"/>
 
         <!--userName-->
@@ -38,8 +40,8 @@
             android:orientation="horizontal"
             android:layout_marginBottom="30dp">
                 <ImageView
-                    android:layout_width="19dp"
-                    android:layout_height="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="20dp"
@@ -49,11 +51,14 @@
                 android:layout_width="wrap_content"
                 android:padding="5dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="First Name, Last Name"
+                android:focusable="false"
                 android:ems="10"
-                android:id="@+id/editText"
+                android:id="@+id/editText2"
+                android:textColor="@color/white"
                 android:background="@drawable/border"
                 android:layout_weight="0.03" />
 
@@ -66,8 +71,8 @@
             android:orientation="horizontal"
             android:layout_marginBottom="30dp">
             <ImageView
-                android:layout_width="19dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="20dp"
@@ -76,12 +81,14 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="Email"
+                android:focusable="false"
                 android:ems="10"
-                android:id="@+id/editText"
+                android:id="@+id/editText3"
                 android:background="@drawable/border"
                 android:layout_weight="0.03" />
 
@@ -94,8 +101,8 @@
             android:orientation="horizontal"
             android:layout_marginBottom="30dp">
             <ImageView
-                android:layout_width="19dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="20dp"
@@ -104,10 +111,12 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="Mobile"
+                android:focusable="false"
                 android:ems="10"
                 android:id="@+id/editText"
                 android:background="@drawable/border"

@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.yelp.clientlib.connection.YelpAPI;
@@ -31,7 +32,7 @@ public class HomeScreenGuest extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static final String TAG = "HomeScreenGuest";
-    private Button Biteme;
+    private ImageView Biteme;
     public static final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     ArrayList<ListItem> restaurantItemInfo;
 
@@ -56,7 +57,7 @@ public class HomeScreenGuest extends AppCompatActivity
         callYelp();
         initializeListView();
 
-        Biteme = (Button) findViewById(R.id.biteMe);
+        Biteme = (ImageView) findViewById(R.id.biteMe);
 
         Biteme.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,9 +109,9 @@ public class HomeScreenGuest extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }

@@ -81,12 +81,12 @@ import java.util.ArrayList;
                     new AlertDialog.Builder(context)
                             .setTitle("Add List")
                             .setMessage("Are you sure you want to add this list to my list?")
-                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener(){
+                            .setPositiveButton("Yes", new DialogInterface.OnClickListener(){
                                 public void onClick(DialogInterface dialog, int which) {
                                     // continue with delete
                                 }
                             })
-                            .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                            .setNegativeButton("No", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     // do nothing
                                 }
@@ -113,8 +113,8 @@ public class IndividualUserActivity extends ListActivity{
 
         //generate list
         list = new ArrayList<String>();
-        list.add("item1");
-        list.add("item2");
+        list.add("List 1");
+        list.add("List 2");
 
         //instantiate custom adapter
         adapter = new MyCustomAdapter(list, this);

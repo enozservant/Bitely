@@ -12,6 +12,6 @@
         android:layout_gravity="center"
         android:gravity="bottom"
         android:textColor="@color/white"
-        android:text="List Name" />
+        android:text="Trending List" />
 
 </android.support.v7.widget.Toolbar>

@@ -49,6 +49,7 @@
                         android:layout_width="178dp"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
+                        android:textColor="@color/white"
                         android:layout_marginLeft="10dp" />
 
                     <ImageView
@@ -63,12 +64,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/restaurant_location"
+                    android:textColor="@color/white"
                     android:layout_marginLeft="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/text_tags"
+                    android:textColor="@color/white"
                     android:layout_marginLeft="10dp" />
             </LinearLayout>
 
@@ -77,6 +80,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:id="@+id/restaurant_comment" />
     </LinearLayout>
 </RelativeLayout>

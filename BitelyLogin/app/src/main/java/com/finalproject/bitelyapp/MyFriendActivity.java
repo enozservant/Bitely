@@ -2,9 +2,11 @@ package com.finalproject.bitelyapp;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -33,7 +35,7 @@ public class MyFriendActivity extends ListActivity
 
     private ArrayList<User> userList;
     private ArrayAdapter<User> adapter;
-
+    private ImageButton add_Friend;
     /**
      * Called when the activity is first created.
      */
@@ -74,6 +76,16 @@ public class MyFriendActivity extends ListActivity
         addAContact(millerUser);
 
         setListAdapter(adapter);
+
+        add_Friend = (ImageButton) findViewById(R.id.add_friend_button);
+//        add_Friend.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                System.out.print("RRR");
+//                Intent i = new Intent(v.getContext(),SearchActivity.class);
+//                v.getContext().startActivity(i);
+//            }
+//        });
     }
 
     public void addAContact(User user)
