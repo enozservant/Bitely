@@ -111,6 +111,7 @@ public class IndividualUserActivity extends ListActivity{
     private User userChosen;
     private FriendandTheirList fat;
     private individualUser iu;
+    private TextView ListNum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,6 +121,7 @@ public class IndividualUserActivity extends ListActivity{
         Intent intent = this.getIntent();
         Bundle bundle = intent.getExtras();
         int position = bundle.getInt("position");
+
         userChosen = (User) bundle.getSerializable(USER_CHOSEN);
 
         userPic = (ImageView) findViewById(R.id.user_pic);
@@ -137,6 +139,9 @@ public class IndividualUserActivity extends ListActivity{
             list.add(iu.listnameatindex(i));
         }
 
+        int amount=iu.getHowmanylists();
+        ListNum = (TextView) findViewById(R.id.num_list_contain);
+        ListNum.setText(amount+" Lists");
         //instantiate custom adapter
         adapter = new MyCustomAdapter(list, this,position);
 
