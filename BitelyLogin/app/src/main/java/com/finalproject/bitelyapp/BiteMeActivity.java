@@ -1,5 +1,6 @@
 package com.finalproject.bitelyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -24,21 +25,37 @@ import retrofit2.Call;
 public class BiteMeActivity extends AppCompatActivity {
 
     private final String TAG = "BiteMeActivity";
+    private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
 
-    ListItem biteItem;
+    ListItem restaurantItem;
     private ImageView image_view;
     private TextView headlineView;
     private Button Biteme;
+    private Button moreInfoButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_bite_me);
         image_view=(ImageView) findViewById(R.id.biteMeRestaurantPic);
         headlineView= (TextView) findViewById(R.id.rname);
-        biteItem = new ListItem();
+        restaurantItem = new ListItem();
         callYelp("Los Angeles");
 
         Biteme = (Button) findViewById(R.id.biteMeAgain);
+        moreInfoButton = (Button) findViewById(R.id.more_info_button);
+
+        moreInfoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(BiteMeActivity.this, RestaurantInfoActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(RESTAURANT_CHOSEN, restaurantItem);
+
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
 
         Biteme.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,8 +71,8 @@ public class BiteMeActivity extends AppCompatActivity {
 
     private void initializeListView()
     {
-        new ImageDownloaderTask(image_view).execute(biteItem.getImageURL());
-        headlineView.setText(biteItem.getName());
+        new ImageDownloaderTask(image_view).execute(restaurantItem.getImageURL());
+        headlineView.setText(restaurantItem.getName());
     }
 
 
@@ -105,8 +122,23 @@ public class BiteMeActivity extends AppCompatActivity {
         int answer = rn.nextInt(businessList.size());
         Log.i(TAG, businessList.get(answer).name());
         Log.i(TAG, businessList.get(answer).imageUrl());
-        biteItem.setName(businessList.get(answer).name());
-        biteItem.setImageURL(businessList.get(answer).imageUrl());
+        restaurantItem.setName(businessList.get(answer).name());
+        restaurantItem.setImageURL(businessList.get(answer).imageUrl());
         // restaurantImagesUrl.add(businessList.get(i).imageUrl());
+        restaurantItem.setName(businessList.get(answer).name());
+        restaurantItem.setImageURL(businessList.get(answer).imageUrl());
+        // restaurantImagesUrl.add(businessList.get(i).imageUrl());
+        restaurantItem.setName(businessList.get(answer).name());
+        restaurantItem.setImageURL(businessList.get(answer).imageUrl());
+        restaurantItem.setComment(businessList.get(answer).snippetText());
+        restaurantItem.setLocation(businessList.get(answer).location().displayAddress().get(0));
+        restaurantItem.setTags(businessList.get(answer).categories());
+        restaurantItem.setRating(businessList.get(answer).rating());
+        restaurantItem.setPhoneNumber(businessList.get(answer).displayPhone());
+
+        restaurantItem.setRatingURL(businessList.get(answer).ratingImgUrlLarge());
+
+        restaurantItem.setRating(businessList.get(answer).rating());
+        restaurantItem.setReviewCount(businessList.get(answer).reviewCount());
     }
 }
