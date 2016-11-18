@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -40,6 +41,7 @@ public class IndividualListActivity extends ListActivity{
     private Button addRestaurant;
     private String category;
     private TextView ListName;
+    private ListView listView;
     @Override
 
     public void onCreate(Bundle savedInstanceState) {
@@ -66,20 +68,20 @@ public class IndividualListActivity extends ListActivity{
             }
         });
 
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-//                // ListItem newsData = (ListItem) listView.getItemAtPosition(position);
-//                // Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
-//                Bundle bundle = new Bundle();
-//                bundle.putSerializable(RESTAURANT_CHOSEN,  myRestaurants.get(position));
-//
-//                Intent intent = new Intent(IndividualListActivity.this, RestaurantInfoActivity.class);
-//                intent.putExtras(bundle);
-//                startActivity(intent);
-//            }
-//        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                // ListItem newsData = (ListItem) listView.getItemAtPosition(position);
+                // Toast.makeText(TrendingActivity.this, "Selected :" + " " + position, Toast.LENGTH_LONG).show();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(RESTAURANT_CHOSEN,  myRestaurants.get(position));
+
+                Intent intent = new Intent(IndividualListActivity.this, RestaurantInfoActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -99,7 +101,7 @@ public class IndividualListActivity extends ListActivity{
     }
     private void initializeListView()
     {
-        final ListView listView = (ListView) findViewById(android.R.id.list);
+        listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(new CustomListAdapter3(this, myRestaurants));
     }
 
