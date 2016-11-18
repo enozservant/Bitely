@@ -1,7 +1,7 @@
 package com.finalproject.game_logic;
 
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.*;
 
 /**
  * Created by williamxu on 12/11/2016.
@@ -51,11 +51,15 @@ public class User {
         return profile;
     }
 
-    public List<Restaurant> getSurroundingRestaurants(){
+    public Set<Restaurant> getSurroundingRestaurants(){
 
         //TODO: get surrounding restaurants based on user location
 
-        return new ArrayList<Restaurant>();
+        Set<Restaurant> retval = new HashSet<>();
+        for (Restaurant r : restaurants){
+            retval.add(r);
+        }
+        return retval;
     }
 
     public void addToList(Restaurant toAdd, CustomList toList){

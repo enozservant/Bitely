@@ -3,25 +3,40 @@ package com.finalproject.game_logic;
 import java.util.*;
 
 
+
 //takes care of logic for discover weekly
 
 public class DiscoverWeeklyLogic  {
 
     public List<Restaurant> generateDiscovery(User user){
         List<RankRestaurant> tempList = new ArrayList<RankRestaurant>();
-        List<Restaurant>  around =  user.getSurroundingRestaurants();
+        Set<Restaurant>  around =  user.getSurroundingRestaurants();
 
-        List<Restaurant> retval = new ArrayList<Restaurant>();
         UserProfileLogic upl = user.getProfile();
 
         for (Restaurant restaurant : around ){
             tempList.add(new RankRestaurant(restaurant, upl.getMatchingScore(restaurant)));
         }
 
-        sort(tempList);
+        Comparator<RankRestaurant> comp = new Comparator<RankRestaurant>() {
+            @Override
+            public int compare(RankRestaurant lhs, RankRestaurant rhs) {
+                if (lhs.getRanking() > rhs.getRanking()) return 1;
+                else if (lhs.getRanking() < rhs.getRanking()) return -1;
+                else return 0;
+            }
+        };
 
-        for (int i = tempList.size()-1; i>=0 ; i--){
-            retval.add(tempList.get(i).getRestaurant());
+        PriorityQueue<RankRestaurant> pq = new PriorityQueue<>(10, comp);
+
+        for (RankRestaurant r : tempList){
+            pq.add(r);
+        }
+
+        List<Restaurant> retval = new ArrayList<Restaurant>(10);
+
+        for (int i = retval.size() -1; i >= 0; i--){
+            retval.set(i, pq.poll().getRestaurant());
         }
 
         return retval;
