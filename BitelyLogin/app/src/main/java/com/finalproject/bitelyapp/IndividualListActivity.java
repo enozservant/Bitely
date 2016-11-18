@@ -142,7 +142,7 @@ public class IndividualListActivity extends ListActivity{
     }
 
     private void populateListGUI(ArrayList<Business> businessList){
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < businessList.size(); i++)
         {
 
             ListItem restaurantItemsList = new ListItem();
