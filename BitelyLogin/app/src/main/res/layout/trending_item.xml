@@ -82,5 +82,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:id="@+id/restaurant_comment" />
+
     </LinearLayout>
 </RelativeLayout>

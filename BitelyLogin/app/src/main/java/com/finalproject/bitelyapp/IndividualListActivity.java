@@ -35,12 +35,14 @@ class Restaurants{
 }
 
 public class IndividualListActivity extends ListActivity{
+
     ArrayList<ListItem> myRestaurants;
     public static final String TAG = "IndividualListActivity";
     private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     private Button addRestaurant;
     private String category;
     private TextView ListName;
+    private TextView ListNum;
     private ListView listView;
     @Override
 
@@ -53,9 +55,16 @@ public class IndividualListActivity extends ListActivity{
         ListName = (TextView) findViewById(R.id.new_list_name);
         ListName.setText(category);
 
+        double rr = Math.floor(Math.random() * 10) + 3;
+        int r = (int)rr;
+
+        ListNum = (TextView) findViewById(R.id.num_rest_contain);
+        ListNum.setText(r+ " Restaurant");
+
         myRestaurants = new ArrayList<>();
-        callYelp("Los Angeles", category);
+        callYelp("Los Angeles", category,r);
         initializeListView();
+
 
 
 
@@ -106,9 +115,12 @@ public class IndividualListActivity extends ListActivity{
     }
 
 
-    private void callYelp(String location, String str){
+    private void callYelp(String location, String str,int n){
         final String loc = location;
         final String searchkey = str;
+        final int num = n;
+
+
         Runnable r = new Runnable(){
             @Override
             public void run() {
@@ -121,7 +133,7 @@ public class IndividualListActivity extends ListActivity{
                     Map<String, String> params = new HashMap<>();
                     params.put("term", loc);
                     params.put("term", searchkey);
-                    params.put("limit","10");
+                    params.put("limit",Integer.toString(num));
 
                     Call<SearchResponse> call = yelpAPI.search(loc,  params);
                     SearchResponse response = call.execute().body();

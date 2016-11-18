@@ -26,8 +26,7 @@ import java.util.Map;
 import retrofit2.Call;
 
 public class IndividualListForOtherUsersActivity extends ListActivity{
-//    ArrayList<Restaurants> myRestaurants;
-//    ArrayAdapter<Restaurants> mAdapter;
+
     ArrayAdapter<String> mAdapter;
     private Button addList;
     private TextView numFollowedView;
@@ -37,6 +36,8 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
     private ListView listView;
     private String category;
     private TextView ListName;
+    private TextView ListNum;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,13 +57,15 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
 
 
 
+        double rr = Math.floor(Math.random() * 10) + 3;
+        int r = (int)rr;
 
-
-
+        ListNum = (TextView) findViewById(R.id.num_rest_contain);
+        ListNum.setText(r+ " Restaurant");
 
 
         myRestaurants = new ArrayList<>();
-        callYelp("Los Angeles", category);
+        callYelp("Los Angeles", category,r);
         initializeListView();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -123,6 +126,7 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
         intent.putExtras(bundle);
         startActivity(intent);
     }
+
     private void initializeListView()
     {
         listView = (ListView) findViewById(android.R.id.list);
@@ -130,9 +134,10 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
     }
 
 
-    private void callYelp(String location, String str){
+    private void callYelp(String location, String str, int n){
         final String loc = location;
         final String searchkey = str;
+        final int number = n;
         Runnable r = new Runnable(){
             @Override
             public void run() {
@@ -145,7 +150,7 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
                     Map<String, String> params = new HashMap<>();
                     params.put("term", loc);
                     params.put("term", searchkey);
-                    params.put("limit","10");
+                    params.put("limit",Integer.toString(number));
 
                     Call<SearchResponse> call = yelpAPI.search(loc,  params);
                     SearchResponse response = call.execute().body();

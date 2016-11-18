@@ -131,29 +131,28 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="82dp"
             android:weightSum="1">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="179dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/google_button"
                 android:text="Google"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
-                android:layout_alignParentLeft="true"
-                android:layout_weight="0.46" />
+                android:layout_alignParentLeft="true" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="184dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/yelp_button"
                 android:text="Yelp"
                 android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="left"
                 android:layout_alignParentLeft="true"
-                android:layout_weight="0.47" />
+                android:layout_weight="0.88" />
 
         </LinearLayout>
 
