@@ -9,7 +9,7 @@ import java.util.*;
 public class UserProfileLogic {
 
     private List<TagCountPair> tags;
-    
+
     public UserProfileLogic(){
         tags = new ArrayList<TagCountPair>();
     }
@@ -67,5 +67,5 @@ public class UserProfileLogic {
 
         return score;
     }
-    
+
 }
