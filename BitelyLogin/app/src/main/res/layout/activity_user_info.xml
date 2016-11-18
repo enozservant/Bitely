@@ -151,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add to My Friends"
-            android:id="@+id/rentButton"
+            android:id="@+id/add_this_friend"
             android:layout_gravity="center_horizontal"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />

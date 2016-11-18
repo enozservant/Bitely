@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class UserInfoActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class UserInfoActivity extends AppCompatActivity {
     private TextView ratingView;
     private ImageView restaurantImage;
     private Button callButton;
+    private Button addButton;
 
     private String displayReviewText;
 
@@ -38,12 +40,22 @@ public class UserInfoActivity extends AppCompatActivity {
 
 
         callButton = (Button) findViewById(R.id.call_user_button);
+        addButton = (Button) findViewById(R.id.add_this_friend);
 
 
         callButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) { call(); }
+        });
+
+        addButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getBaseContext(), "Added Friend!", Toast.LENGTH_LONG).show();
+            }
         });
 
         // get the restaurant item
