@@ -52,7 +52,7 @@ public class MylistActivity extends ListActivity {
             @Override
             public void onClick(View v) {
                 System.out.print("RRR");
-                Intent i = new Intent(MylistActivity.this,SearchActivity.class);
+                Intent i = new Intent(MylistActivity.this,CreateListActivity.class);
                 startActivity(i);
             }
         });

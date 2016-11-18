@@ -11,7 +11,7 @@
         android:textSize="30sp"
         android:layout_gravity="center"
         android:gravity="bottom"
-        android:textColor="@color/white"
-        android:text="Username" />
+        android:text="User Profile"
+        android:textColor="@color/white"/>
 
 </android.support.v7.widget.Toolbar>

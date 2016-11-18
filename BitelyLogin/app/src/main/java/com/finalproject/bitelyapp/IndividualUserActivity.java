@@ -108,7 +108,7 @@ public class IndividualUserActivity extends ListActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_when_press_an_user);
+        setContentView(R.layout.activity_when_press_an_user_friends);
 
         // get the restaurant item
         Intent intent = this.getIntent();
