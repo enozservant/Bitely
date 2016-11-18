@@ -16,6 +16,7 @@ public class RestaurantInfoActivity extends AppCompatActivity
 
     private Button googleButton;
     private Button yelpButton;
+    private Button addToListButton;
 
     private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     private TextView nameTextView;
@@ -51,6 +52,7 @@ public class RestaurantInfoActivity extends AppCompatActivity
 
         googleButton = (Button) findViewById(R.id.google_button);
         yelpButton = (Button) findViewById(R.id.yelp_button);
+        addToListButton = (Button) findViewById(R.id.add_to_my_list);
 
         yelpButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +71,14 @@ public class RestaurantInfoActivity extends AppCompatActivity
                 startActivity(browserIntent);
             }
         });
+
+        addToListButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addToFirebase();
+            }
+        });
+
 
 
 
@@ -99,6 +109,11 @@ public class RestaurantInfoActivity extends AppCompatActivity
 
         String query = baseURL += parsedName;
         return query;
+    }
+
+    private void addToFirebase()
+    {
+
     }
 
 }
