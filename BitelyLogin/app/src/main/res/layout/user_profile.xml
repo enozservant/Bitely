@@ -48,6 +48,7 @@
                     android:background="@drawable/ic_profile"/>
 
             <EditText
+                android:id="@+id/user_name_field"
                 android:layout_width="wrap_content"
                 android:padding="5dp"
                 android:layout_marginRight="20dp"
@@ -57,7 +58,6 @@
                 android:text="First Name, Last Name"
                 android:focusable="false"
                 android:ems="10"
-                android:id="@+id/editText2"
                 android:textColor="@color/white"
                 android:background="@drawable/border"
                 android:layout_weight="0.03" />
@@ -88,7 +88,7 @@
                 android:text="Email"
                 android:focusable="false"
                 android:ems="10"
-                android:id="@+id/editText3"
+                android:id="@+id/user_profile_email"
                 android:background="@drawable/border"
                 android:layout_weight="0.03" />
 
@@ -118,7 +118,7 @@
                 android:text="Mobile"
                 android:focusable="false"
                 android:ems="10"
-                android:id="@+id/editText"
+                android:id="@+id/user_profile_phone"
                 android:background="@drawable/border"
                 android:layout_weight="0.03" />
 
