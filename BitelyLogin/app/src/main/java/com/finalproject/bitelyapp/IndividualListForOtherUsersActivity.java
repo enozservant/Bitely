@@ -53,7 +53,7 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
                         break;
                     case 1:
                         addList.setText("Follow List");
-                        numberFollows++gi;
+                        numberFollows++;
                         numFollowedView.setText(numberFollows + " follows");
                         Toast.makeText(getBaseContext(), "Unfollowed", Toast.LENGTH_LONG).show();
                         view.setTag(0); //pause
