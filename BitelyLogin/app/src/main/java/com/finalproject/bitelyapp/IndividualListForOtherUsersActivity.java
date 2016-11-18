@@ -51,11 +51,12 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
 
         //myRestaurants = new ArrayList<Restaurants>();
 
-//        String[] values = new String[] { "Panda Express", "California Pizza Kitchen", "Seeds",
-//                "In-n-out", "Coffee Bean", "Lemonade", "KFC"};
-//        mAdapter = new ArrayAdapter<String>(this, R.layout.list_item_gui, R.id.label, values);
 
-//        setListAdapter(mAdapter);
+
+
+
+
+        
 
         myRestaurants = new ArrayList<>();
         callYelp("Los Angeles", category);
