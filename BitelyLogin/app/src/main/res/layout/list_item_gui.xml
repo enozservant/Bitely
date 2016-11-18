@@ -9,21 +9,21 @@
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10px"
-        android:layout_marginRight="10px"
-        android:layout_marginTop="10px"
+        android:paddingLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
         android:src="@mipmap/ic_launcher">
     </ImageView>
 
     <TextView
         android:id="@+id/label"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@+id/label"
-        android:textSize="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
-        android:textColor="@color/white"
-        android:layout_marginTop="30px">
+        android:layout_toRightOf="@id/icon_1"
+        android:textSize="20dp"
+        android:textColor="@color/white">
     </TextView>
 
 
