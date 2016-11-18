@@ -5,14 +5,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.yelp.clientlib.connection.YelpAPI;
 import com.yelp.clientlib.connection.YelpAPIFactory;
 import com.yelp.clientlib.entities.Business;
 import com.yelp.clientlib.entities.SearchResponse;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,6 +31,9 @@ public class TrendingActivity extends AppCompatActivity {
 
     private final String TAG = "TrendingActivity";
     private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
+    private Button find;
+    private ListView listView;
+    private TextView loc;
 
 
     ArrayList<ListItem> restaurantItemInfo;
@@ -35,11 +43,12 @@ public class TrendingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trending);
 
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         restaurantItemInfo = new ArrayList<ListItem>();
         callYelp("Los Angeles");
 
-        final ListView listView = (ListView) findViewById(R.id.trending_list);
+        listView = (ListView) findViewById(R.id.trending_list);
         listView.setAdapter(new CustomListAdapter(this, restaurantItemInfo));
 
         listView.setOnItemClickListener(new OnItemClickListener() {
@@ -56,11 +65,24 @@ public class TrendingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        find = (Button) findViewById(R.id.search_button);
+        loc = (TextView) findViewById(R.id.city_textfield);
+        find.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                restaurantItemInfo.clear();
+                listView.setAdapter(null);
+                callYelp(loc.getText().toString());
+            }
+        });
+
+
     }
 
     private void initializeListView()
     {
-        final ListView listView = (ListView) findViewById(R.id.trending_list);
+        listView = (ListView) findViewById(R.id.trending_list);
         listView.setAdapter(new CustomListAdapter(this, restaurantItemInfo));
     }
 
@@ -99,10 +121,10 @@ public class TrendingActivity extends AppCompatActivity {
         Thread yelpThread = new Thread (r);
         yelpThread.start();
 
-       try
-       {
+        try
+        {
             yelpThread.join();
-           initializeListView();
+            initializeListView();
 
         } catch(InterruptedException ie) { Log.d("YELP_THREAD", "Yelp thread interrupted"); }
     }
