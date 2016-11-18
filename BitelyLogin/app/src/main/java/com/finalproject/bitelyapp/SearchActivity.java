@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 
@@ -83,7 +83,7 @@ public class SearchActivity extends AppCompatActivity
 //        ArrayList<String> search = new ArrayList<>();
 
 
-        ImageButton searchYelp = (ImageButton) findViewById(R.id.imageButton);
+        ImageView searchYelp = (ImageView) findViewById(R.id.imageView2);
         searchYelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,7 +132,7 @@ public class SearchActivity extends AppCompatActivity
     private void initializeListView()
     {
         final ListView theRestaurantView = (ListView) findViewById(R.id.theList);
-        theRestaurantView.setAdapter(new CustomListAdapter2(this, restaurantItemInfo));
+        theRestaurantView.setAdapter(new CustomListAdapter3(this, restaurantItemInfo));
 
         theRestaurantView.setOnItemClickListener(new OnItemClickListener() {
 
