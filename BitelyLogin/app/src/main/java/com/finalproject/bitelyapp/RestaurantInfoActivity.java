@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RestaurantInfoActivity extends AppCompatActivity
 {
@@ -113,6 +114,7 @@ public class RestaurantInfoActivity extends AppCompatActivity
 
     private void addToFirebase()
     {
+        Toast.makeText(getBaseContext(), "Added list", Toast.LENGTH_LONG).show();
 
     }
 
