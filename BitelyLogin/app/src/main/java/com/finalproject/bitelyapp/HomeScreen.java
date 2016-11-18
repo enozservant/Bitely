@@ -320,6 +320,7 @@ public class HomeScreen extends AppCompatActivity
 
             restaurantItemsList.setRating(businessList.get(i).rating());
             restaurantItemsList.setReviewCount(businessList.get(i).reviewCount());
+            restaurantItemsList.setBusinessURL(businessList.get(i).url());
 
 
 

@@ -138,9 +138,9 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/google_button"
                 android:text="Google"
                 android:textColor="@color/black"
-                android:id="@+id/googlebutton"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
                 android:layout_weight="0.46" />
@@ -148,9 +148,9 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/yelp_button"
                 android:text="Yelp"
                 android:textColor="@color/black"
-                android:id="@+id/yelpbutton"
                 android:layout_gravity="center_horizontal"
                 android:layout_alignParentLeft="true"
                 android:layout_weight="0.47" />

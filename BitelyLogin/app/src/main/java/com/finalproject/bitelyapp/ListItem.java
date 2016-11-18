@@ -28,6 +28,8 @@ public class ListItem implements Serializable
     private String snippet;
     private String phoneNumber;
 
+    private String businessURL;
+
     private String ratingURL;
 
     private int reviewCount;
@@ -45,6 +47,7 @@ public class ListItem implements Serializable
         phoneNumber = "";
         ratingURL = "";
         reviewCount = 0;
+        businessURL = "";
     }
 
 
@@ -84,6 +87,11 @@ public class ListItem implements Serializable
     public int getReviewCount()
     {
         return this.reviewCount;
+    }
+
+    public String getBusinessURL()
+    {
+        return this.businessURL;
     }
 
 
@@ -132,6 +140,8 @@ public class ListItem implements Serializable
     {
         this.location = location;
     }
+
+    public void setBusinessURL(String businessURL) { this.businessURL = businessURL; }
 
     public String getLocation()
     {

@@ -137,6 +137,7 @@ public class BiteMeActivity extends AppCompatActivity {
         restaurantItem.setPhoneNumber(businessList.get(answer).displayPhone());
 
         restaurantItem.setRatingURL(businessList.get(answer).ratingImgUrlLarge());
+        restaurantItem.setBusinessURL(businessList.get(answer).url());
 
         restaurantItem.setRating(businessList.get(answer).rating());
         restaurantItem.setReviewCount(businessList.get(answer).reviewCount());

@@ -1,8 +1,11 @@
 package com.finalproject.bitelyapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,6 +13,9 @@ public class RestaurantInfoActivity extends AppCompatActivity
 {
 
     private ListItem restaurantItem;
+
+    private Button googleButton;
+    private Button yelpButton;
 
     private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     private TextView nameTextView;
@@ -43,6 +49,29 @@ public class RestaurantInfoActivity extends AppCompatActivity
         displayReviewText = restaurantItem.getReviewCount() + " people have rated this restaurant";
 
 
+        googleButton = (Button) findViewById(R.id.google_button);
+        yelpButton = (Button) findViewById(R.id.yelp_button);
+
+        yelpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // if(restaurantItem.getBusinessURL().equals("")) restaurantItem.setBusinessURL("google.com/");
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(restaurantItem.getBusinessURL()));
+                startActivity(browserIntent);
+            }
+        });
+
+        googleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(constructGoogleQuery()));
+                startActivity(browserIntent);
+            }
+        });
+
+
+
 
         // set the values
         nameTextView.setText(restaurantItem.getName());
@@ -60,6 +89,16 @@ public class RestaurantInfoActivity extends AppCompatActivity
 
 
 
+    }
+
+    private String constructGoogleQuery()
+    {
+        String baseURL = "https://www.google.com/#q=";
+        String restaurantName = restaurantItem.getName();
+        String parsedName = restaurantName.replace(' ', '+');
+
+        String query = baseURL += parsedName;
+        return query;
     }
 
 }
