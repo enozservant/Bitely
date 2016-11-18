@@ -35,16 +35,19 @@ public class IndividualListForOtherUsersActivity extends ListActivity{
     private final String RESTAURANT_CHOSEN = "Restaurant Chosen";
     ArrayList<ListItem> myRestaurants;
     private ListView listView;
-
+    private String category;
+    private TextView ListName;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_when_press_a_list_from_other_user);
 
-
         Bundle bundle = getIntent().getExtras();
-        String category = bundle.getString("search");
+        category = bundle.getString("search");
         System.out.println(category);
+
+        ListName = (TextView) findViewById(R.id.fuck);
+        ListName.setText(category);
 
         numFollowedView = (TextView) findViewById(R.id.num_ppl_follow_list);
         numFollowedView.setText(numberFollows + " follows");

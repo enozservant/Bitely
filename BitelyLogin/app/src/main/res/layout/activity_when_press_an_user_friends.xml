@@ -39,7 +39,7 @@
                     android:layout_marginLeft="10dp">
 
                     <TextView
-                        android:id="@+id/num_rest_contain"
+                        android:id="@+id/num_list_contain"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="23dp"
@@ -47,7 +47,7 @@
                         android:layout_marginBottom="10dp"
                         android:textSize="20dp"
                         android:textColor="@color/white"
-                        android:text="10 Lists" />
+                        android:text="" />
 
                 </LinearLayout>
 
