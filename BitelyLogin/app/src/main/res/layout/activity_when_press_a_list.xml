@@ -17,13 +17,26 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@color/primary">
-            <include layout="@layout/tool_bar_click_on_a_list"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:textColor="@color/white"
+                android:text="List Name"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/new_list_name"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@color/primary"
                 android:weightSum="1">
+
 
                 <ImageView
                     android:id="@+id/list_pic"

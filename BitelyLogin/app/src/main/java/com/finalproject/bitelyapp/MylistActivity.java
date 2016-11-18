@@ -33,15 +33,15 @@ public class MylistActivity extends ListActivity {
     ArrayList<String> lista;
     ArrayAdapter <String> adaptor;
     private ImageButton addList;
-
+    private String[] values;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_list);
 
-        String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
-                "Blackberry" };
+        values = new String[] { "Bars", "Italian", "Breakfast",
+                "Chinese" };
         // use your custom layout
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 R.layout.list_item_gui, R.id.label, values);
@@ -52,7 +52,7 @@ public class MylistActivity extends ListActivity {
             @Override
             public void onClick(View v) {
                 System.out.print("RRR");
-                Intent i = new Intent(MylistActivity.this,CreateListActivity.class);
+                Intent i = new Intent(MylistActivity.this,SearchActivity.class);
                 startActivity(i);
             }
         });
@@ -60,8 +60,9 @@ public class MylistActivity extends ListActivity {
 
     protected void onListItemClick(ListView l, View v, int position, long id) {
         Intent i = new Intent(this, IndividualListActivity.class);
+        String listName = values[position];
+        i.putExtra("listName", listName);
         startActivity(i);
     }
-
 
 }
