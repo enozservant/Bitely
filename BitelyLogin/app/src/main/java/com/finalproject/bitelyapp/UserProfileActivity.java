@@ -43,6 +43,7 @@ public class UserProfileActivity extends AppCompatActivity
         userNameText = (TextView) findViewById(R.id.user_name_field);
         emailText = (TextView) findViewById(R.id.user_profile_email);
         phoneNumberText = (TextView) findViewById(R.id.user_profile_phone);
+        userNameText.setEnabled(true);
         firstName = "";
         lastName = "";
         email = "";
@@ -93,8 +94,6 @@ public class UserProfileActivity extends AppCompatActivity
                             setPhoneNumber();
                         }
                         System.out.println("innerkey: " + key + "// innervalue: " + value);
-                        // System.out.println("Children" + user);
-                        // System.out.println("Value" + (String)d.getValue());
                     }
 
                 }

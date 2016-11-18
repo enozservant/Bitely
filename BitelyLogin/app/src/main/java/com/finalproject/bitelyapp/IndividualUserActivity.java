@@ -8,20 +8,17 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
- class MyCustomAdapter extends BaseAdapter implements ListAdapter {
+class MyCustomAdapter extends BaseAdapter implements ListAdapter {
     private ArrayList<String> list = new ArrayList<String>();
     private Context context;
 
@@ -103,13 +100,26 @@ import java.util.ArrayList;
 
 
 public class IndividualUserActivity extends ListActivity{
-    ArrayList<String> list;
-    MyCustomAdapter adapter;
-    ImageView userPic;
+    private ArrayList<String> list;
+    private MyCustomAdapter adapter;
+    private ImageView userPic;
+    private final String USER_CHOSEN = "User Chosen";
+    private User userChosen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_when_press_an_user);
+
+        // get the restaurant item
+        Intent intent = this.getIntent();
+        Bundle bundle = intent.getExtras();
+        userChosen = (User) bundle.getSerializable(USER_CHOSEN);
+
+        userPic = (ImageView) findViewById(R.id.user_pic);
+        if(userPic != null)
+        {
+            new ImageDownloaderTask(userPic).execute(userChosen.getImageURL());
+        }
 
         //generate list
         list = new ArrayList<String>();
@@ -126,8 +136,19 @@ public class IndividualUserActivity extends ListActivity{
         userPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("Hello");
+                changeToUserInfoPage();
             }
         });
+    }
+
+    private void changeToUserInfoPage()
+    {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(USER_CHOSEN, userChosen);
+
+        Intent intent = new Intent(IndividualUserActivity.this, UserInfoActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+
     }
 }

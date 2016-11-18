@@ -16,14 +16,14 @@
 
         <ImageView
             android:id="@+id/profile_pic"
-            android:src="@drawable/ic_profile"
+            android:src="@drawable/ic_person"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"/>
 
         <TextView
-            android:text="Change Pic"
+            android:text="User Info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/change_profile_pic_link"
