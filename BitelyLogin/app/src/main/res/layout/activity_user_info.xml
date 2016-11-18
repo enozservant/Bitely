@@ -4,6 +4,7 @@
     android:id="@+id/activity_user_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:fillViewport="true">
 
     <LinearLayout
@@ -49,16 +50,16 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/my_friend"
                 android:id="@+id/imageView3"
                 android:paddingLeft="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/person_info_address"
+                android:id="@+id/person_number_friends"
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 android:paddingBottom="4dp" />
@@ -76,16 +77,16 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_shapes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/my_list"
                 android:id="@+id/imageView4"
                 android:paddingLeft="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/person_info_description"
+                android:id="@+id/person_number_lists"
                 android:paddingLeft="10dp"
                 android:textSize="18sp"
                 android:paddingBottom="4dp" />
@@ -101,14 +102,13 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_people_3"
-                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_email"
                 android:paddingLeft="10dp"/>
 
             <TextView
-                android:id="@+id/person_info_rating"
+                android:id="@+id/person_info_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"

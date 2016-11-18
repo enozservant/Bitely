@@ -18,6 +18,10 @@ public class User implements Serializable
     private String lastName;
     private String phoneNumber;
     private String imageURL;
+    private String email;
+
+    private int numberFriends;
+    private int numberLists;
 
     private ArrayList<User> friendList;
     private ArrayList<User> restaurantList;
@@ -37,6 +41,9 @@ public class User implements Serializable
         lastName = "";
         phoneNumber = "";
         imageURL = "";
+        numberFriends = 0;
+        numberLists = 0;
+        email = "";
 
     }
 
@@ -44,9 +51,32 @@ public class User implements Serializable
      * Accessor methods for class variables
      */
 
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
     public String toString()
     {
         return this.firstName + " " + this.lastName;
+    }
+
+    public void setNumberLists(int numberLists)
+    {
+        this.numberLists = numberLists;
+    }
+
+    public void addList()
+    {
+        this.numberLists++;
+    }
+
+    public void setNumberFriends(int numberFriends)
+    {
+        this.numberFriends = numberFriends;
+    }
+    public void addFriend()
+    {
+        this.numberFriends++;
     }
 
     public void setUID(String UID)
@@ -106,5 +136,20 @@ public class User implements Serializable
     public ArrayList<User> getFriends()
     {
         return this.friendList;
+    }
+
+    public int getNumberFriends()
+    {
+        return this.numberFriends;
+    }
+
+    public int getNumberLists()
+    {
+        return this.numberLists;
+    }
+
+    public String getEmail()
+    {
+        return this.email;
     }
 }

@@ -2,7 +2,6 @@ package com.finalproject.bitelyapp;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -54,21 +53,30 @@ public class MyFriendActivity extends ListActivity
         userOne.setFirstName("Steve");
         userOne.setLastName("Jobs");
         userOne.setPhoneNumer("7608518162");
+        userOne.setEmail("stevejobs@apple.com");
         userOne.setImageURL("http://www.adweek.com/agencyspy/wp-content/uploads/sites/7/2015/06/steve-jobs.jpg");
+        userOne.setNumberLists(2);
+        userOne.setNumberFriends(4);
 
 
         User userTwo = new User();
         userTwo.setFirstName("Bob");
         userTwo.setLastName("Dylan");
         userOne.setPhoneNumer("7608518162");
+        userTwo.setEmail("bobdylan@music.com");
         userTwo.setImageURL("http://www.mojo4music.com/media/2014/02/Dylan-770.jpg");
+        userTwo.setNumberLists(4);
+        userTwo.setNumberFriends(3);
 
         // Jeffrey Miller
         User millerUser = new User();
         millerUser.setFirstName("Dr. Jeffrey");
         millerUser.setLastName("Miller");
         millerUser.setPhoneNumer("2137407129");
+        millerUser.setEmail("jeffrey.miller@usc.edu");
         millerUser.setImageURL("https://pressroom.usc.edu/files/2015/01/JeffreyMiller-cropped.jpg");
+        millerUser.setNumberLists(5);
+        millerUser.setNumberFriends(4);
 
         // add the users to the list view
         addAContact(userOne);
@@ -81,9 +89,7 @@ public class MyFriendActivity extends ListActivity
 //        add_Friend.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                System.out.print("RRR");
-//                Intent i = new Intent(v.getContext(),SearchActivity.class);
-//                v.getContext().startActivity(i);
+//
 //            }
 //        });
     }
@@ -96,12 +102,12 @@ public class MyFriendActivity extends ListActivity
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-//        Intent intent = new Intent(this, UserInfoActivity.class);
-//        Bundle bundle = new Bundle();
-//        bundle.putSerializable(USER_CHOSEN, userList.get(position));
-//        intent.putExtras(bundle);
-//        startActivity(intent);
-        Intent i = new Intent(this, IndividualUserActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(this, IndividualUserActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(USER_CHOSEN, userList.get(position));
+        intent.putExtras(bundle);
+        startActivity(intent);
+        // Intent i = new Intent(this, IndividualUserActivity.class);
+        // startActivity(i);
     }
 }
